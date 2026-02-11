@@ -26,7 +26,7 @@ Mensaje: ${message}
   return (
     <>
       {/* HERO */}
-      <section className="relative h-[70vh] w-full overflow-hidden">
+      <section className="relative py-24 w-full overflow-hidden">
         <div className="absolute inset-0 bg-black/60" />
 
         <div className="relative z-10 h-full flex items-center pt-20">

@@ -8,7 +8,7 @@ export default function ProductsPage() {
   return (
     <>
       {/* HERO */}
-      <section className="relative h-[70vh] w-full overflow-hidden">
+      <section className="relative py-24 w-full overflow-hidden">
          <div
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: "url('/images/layout/products.jpg')" }}

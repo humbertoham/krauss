@@ -171,6 +171,10 @@ export default function Navbar() {
   <Link
     key={category.slug}
     href={`/productos/${category.slug}`}
+    onClick={() => {
+      setMenuOpen(false)
+      setProductsOpen(false)
+    }}
     className="nav-underline text-sm text-[var(--km-gray-dark)] hover:text-[var(--km-red)] transition"
   >
     {category.title}
@@ -182,7 +186,7 @@ export default function Navbar() {
               </AnimatePresence>
 
               <Link
-                href="#nosotros"
+                href="/nosotros"
                 className="nav-underline font-title text-2xl text-[var(--km-black)]"
                 onClick={() => setMenuOpen(false)}
               >
@@ -190,7 +194,7 @@ export default function Navbar() {
               </Link>
 
               <Link
-                href="#contacto"
+                href="/contacto"
                 className="nav-underline font-title text-2xl text-[var(--km-black)]"
                 onClick={() => setMenuOpen(false)}
               >
@@ -210,7 +214,7 @@ export default function Navbar() {
                 </div>
 
                 <Link
-                  href="#contacto"
+                  href="/contacto"
                   className="btn-primary w-full justify-center"
                   onClick={() => setMenuOpen(false)}
                 >

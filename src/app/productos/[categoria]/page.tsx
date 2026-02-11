@@ -29,7 +29,7 @@ export default async function CategoryPage({ params }: PageProps) {
   return (
     <>
       {/* HERO CATEGORÍA */}
-      <section className="relative h-[60vh] w-full overflow-hidden">
+      <section className="relative py-24  w-full overflow-hidden">
         {/* Background */}
         <div
           className="absolute inset-0 bg-cover bg-center"
