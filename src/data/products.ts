@@ -9,6 +9,25 @@ export type Product = {
   description: string
   images: string[]
   specs: { label: string; value: string }[]
+
+  heroImage?: string
+  configurations?: ProductConfigurationItem[]
+}
+
+export type ProductConfigurationItem = {
+  title: string
+  image: string
+}
+
+
+export type CategoryAdvantage = {
+  title: string
+  description: string
+  icon: string
+}
+export type CategoryFunction = {
+  title: string
+  description: string
 }
 
 export type ProductCategory = {
@@ -17,6 +36,8 @@ export type ProductCategory = {
   description: string
   image: string
   products: Product[]
+  advantages: CategoryAdvantage[]   
+  functions?: CategoryFunction[]
 }
 
 export const categories: ProductCategory[] = [
@@ -26,6 +47,66 @@ export const categories: ProductCategory[] = [
     description:
       'Carretillas elevadoras eléctricas diseñadas para operaciones eficientes, silenciosas y libres de emisiones en entornos industriales.',
     image: '/images/montacarga.png',
+    functions: [
+  {
+    title: 'Manipulación eficiente de cargas pesadas',
+    description:
+      'Diseñadas para levantar, transportar y posicionar cargas de alto tonelaje con precisión y estabilidad en entornos industriales.',
+  },
+  {
+    title: 'Operación en espacios interiores',
+    description:
+      'Funcionamiento eléctrico sin emisiones que permite su uso en almacenes, centros logísticos y plantas de producción.',
+  },
+  {
+    title: 'Optimización de procesos logísticos',
+    description:
+      'Facilitan el movimiento continuo de mercancía, reduciendo tiempos operativos y aumentando la productividad.',
+  },
+  {
+    title: 'Elevación a diferentes alturas',
+    description:
+      'Configurables con múltiples opciones de mástil para adaptarse a distintos sistemas de almacenamiento vertical.',
+  },
+  {
+    title: 'Seguridad operativa avanzada',
+    description:
+      'Equipadas con sistemas de control que garantizan estabilidad, frenado eficiente y maniobrabilidad segura.',
+  },
+],
+    advantages: [
+  {
+    title: 'Operación limpia y silenciosa',
+    description:
+      'Funcionamiento sin emisiones contaminantes y con bajo nivel de ruido, ideal para interiores y entornos industriales modernos.',
+    icon: 'eco',
+  },
+  {
+    title: 'Precisión y control superior',
+    description:
+      'Movimiento suave y suministro de energía constante para maniobras más seguras y precisas.',
+    icon: 'precision',
+  },
+  {
+    title: 'Configuración adaptable',
+    description:
+      'Alturas de elevación y accesorios personalizables para ajustarse a distintos tipos de operación.',
+    icon: 'custom',
+  },
+  {
+    title: 'Diseño ergonómico e intuitivo',
+    description:
+      'Controles digitales y tablero moderno que facilitan la operación para todo tipo de operador.',
+    icon: 'interface',
+  },
+  {
+    title: 'Mayor vida útil y rentabilidad',
+    description:
+      'Menor desgaste mecánico que reduce costos de mantenimiento y maximiza el retorno de inversión.',
+    icon: 'durable',
+  },
+]
+,
     products: [
   {
     slug: 'ht-1-5t',
@@ -51,6 +132,22 @@ export const categories: ProductCategory[] = [
       { label: 'Rueda trasera', value: '500-8' },
       { label: 'Color', value: 'Personalizable' },
     ],
+    heroImage: '/products/ht-1-5t/hero.png',
+
+configurations: [
+  {
+    title: 'Configuración de Mástil Triplex',
+    image: '/config/ht-3-0t/mastil.jpg',
+  },
+  {
+    title: 'Batería de Litio Industrial',
+    image: '/config/ht-3-0t/bateria.jpg',
+  },
+  {
+    title: 'Desplazador Lateral',
+    image: '/config/ht-3-0t/desplazador.jpg',
+  },
+],
   },
 
   {
@@ -316,6 +413,67 @@ export const categories: ProductCategory[] = [
     description:
       'Apiladores industriales ideales para el manejo de cargas en espacios reducidos y operaciones logísticas.',
     image: '/images/apilador.png',
+    functions: [
+  {
+    title: 'Apilamiento vertical eficiente',
+    description:
+      'Permiten organizar mercancía en altura dentro de almacenes con máxima estabilidad y precisión.',
+  },
+  {
+    title: 'Transporte interno de pallets',
+    description:
+      'Ideales para mover cargas dentro de áreas logísticas sin necesidad de equipos de gran tamaño.',
+  },
+  {
+    title: 'Optimización de espacio en almacén',
+    description:
+      'Diseño compacto que facilita la operación en pasillos angostos y zonas de almacenamiento reducidas.',
+  },
+  {
+    title: 'Operación ergonómica',
+    description:
+      'Controles accesibles y diseño orientado al operador para jornadas prolongadas sin fatiga.',
+  },
+  {
+    title: 'Adaptabilidad a distintos formatos de carga',
+    description:
+      'Capacidad de ajustarse a diferentes dimensiones de pallets y configuraciones de almacenamiento.',
+  },
+]
+,
+    advantages: [
+  {
+    title: 'Diseño enfocado en el operador',
+    description:
+      'Empuñadura cómoda y controles accesibles que permiten jornadas prolongadas sin fatiga.',
+    icon: 'ergonomic',
+  },
+  {
+    title: 'Alta capacidad de carga',
+    description:
+      'Estructura robusta diseñada para manejar cargas pesadas con estabilidad.',
+    icon: 'capacity',
+  },
+  {
+    title: 'Compacto y maniobrable',
+    description:
+      'Ideal para pasillos estrechos y almacenes con espacio reducido.',
+    icon: 'compact',
+  },
+  {
+    title: 'Bajo mantenimiento',
+    description:
+      'Componentes diseñados para durabilidad y reducción de costos operativos.',
+    icon: 'maintenance',
+  },
+  {
+    title: 'Adaptabilidad de horquillas',
+    description:
+      'Horquillas ajustables que permiten manipular diferentes tamaños de carga.',
+    icon: 'adjustable',
+  },
+]
+,
     products: [
   {
     slug: 'ht-cdd5',
@@ -476,6 +634,67 @@ export const categories: ProductCategory[] = [
     description:
       'Plataformas elevadoras de tijera para trabajos en altura con máxima estabilidad y seguridad.',
     image: '/images/tijera.png',
+    functions: [
+  {
+    title: 'Trabajo seguro en altura',
+    description:
+      'Proporcionan una plataforma estable para realizar tareas de mantenimiento, construcción e instalación.',
+  },
+  {
+    title: 'Elevación de personal y materiales',
+    description:
+      'Permiten elevar operadores junto con herramientas y materiales necesarios para la operación.',
+  },
+  {
+    title: 'Acceso a áreas de difícil alcance',
+    description:
+      'Facilitan intervenciones en zonas elevadas dentro de espacios industriales y comerciales.',
+  },
+  {
+    title: 'Optimización del tiempo operativo',
+    description:
+      'Reducen tiempos de montaje y desmontaje en comparación con métodos tradicionales de elevación.',
+  },
+  {
+    title: 'Versatilidad en distintos entornos',
+    description:
+      'Adecuadas para uso en interiores y exteriores según la configuración seleccionada.',
+  },
+]
+,
+    advantages: [
+  {
+    title: 'Versatilidad en altura',
+    description:
+      'Solución ideal para mantenimiento, construcción y operaciones industriales.',
+    icon: 'versatile',
+  },
+  {
+    title: 'Estructura de alta resistencia',
+    description:
+      'Diseñadas para soportar cargas pesadas con máxima estabilidad.',
+    icon: 'capacity',
+  },
+  {
+    title: 'Optimización del espacio',
+    description:
+      'Diseño compacto que permite trabajar en áreas limitadas.',
+    icon: 'space',
+  },
+  {
+    title: 'Durabilidad industrial',
+    description:
+      'Fabricadas con materiales de alta calidad para uso intensivo.',
+    icon: 'durable',
+  },
+  {
+    title: 'Configuración personalizada',
+    description:
+      'Diferentes capacidades, alturas y opciones según requerimiento.',
+    icon: 'custom',
+  },
+]
+,
     products: [
       {
   slug: 'ht-mp',

@@ -2,6 +2,12 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { categories } from '@/data/products'
 import ProductCarousel from '@/components/ProductCarousel'
+import RelatedProducts from '@/components/RelatedProducts'
+import ProductQuoteForm from '@/components/ProductQuoteForm'
+import ProductComparison from '@/components/ProductComparison'
+import CategoryFunctions from '@/components/CategoryFunctions'
+import ProductConfigurationShowcase from '@/components/ProductConfigurationShowcase'
+
 
 type PageProps = {
   params: Promise<{
@@ -105,6 +111,27 @@ export default async function ProductPage({ params }: PageProps) {
             </div>
           </div>
         </div>
+        <ProductConfigurationShowcase product={product} />
+
+        <ProductComparison
+  category={category}
+  currentProduct={product}
+/>
+<CategoryFunctions category={category} />
+
+
+        <ProductQuoteForm
+  categoryTitle={category.title}
+  productName={product.name}
+  productModel={product.model}
+/>
+
+        <RelatedProducts
+  category={category}
+  currentProductSlug={product.slug}
+/>
+
+
       </section>
     </>
   )

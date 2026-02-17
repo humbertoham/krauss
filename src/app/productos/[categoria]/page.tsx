@@ -2,6 +2,8 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { categories } from '@/data/products'
 import Image from 'next/image'
+import CategoryProductGrid from '@/components/CategoryProductGrid'
+import CategoryAdvantages from '@/components/CategoryAdvantages'
 
 type PageProps = {
   params: Promise<{
@@ -76,67 +78,13 @@ export default async function CategoryPage({ params }: PageProps) {
           </div>
 
 {/* Grid de productos reales */}
-<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-  {category.products.map((product) => (
-    <div
-      key={product.slug}
-      className="group border border-black/10 bg-white flex flex-col overflow-hidden transition-all duration-300 hover:shadow-xl"
-    >
-      {/* Imagen principal */}
-      <div className="relative h-56 overflow-hidden bg-gray-100">
-        <Image
-          src={product.images[0]} // 🔥 ahora usamos images[0]
-          alt={product.name}
-          fill
-          sizes="(max-width: 768px) 100vw, 33vw"
-          className="object-cover transition-transform duration-500 group-hover:scale-105"
-        />
-      </div>
+<CategoryProductGrid category={category} />
 
-      {/* Contenido */}
-      <div className="p-6 flex flex-col justify-between flex-1">
-        <div>
-          <span className="text-xs text-[var(--km-red)] font-semibold tracking-wide">
-            {product.model}
-          </span>
-
-          <h3 className="font-title text-lg text-[var(--km-black)] mt-1 mb-2">
-            {product.name}
-          </h3>
-
-          <p className="text-sm text-[var(--km-gray-dark)] mb-3">
-            {product.shortDescription}
-          </p>
-
-          <p className="text-sm font-semibold text-black">
-            Capacidad: {product.capacityKg.toLocaleString()} kg
-          </p>
-        </div>
-
-        {/* CTA */}
-        <div className="mt-6">
-          <Link
-            href={`/productos/${categoria}/${product.slug}`}
-            className="inline-flex items-center justify-center
-                       border border-[var(--km-black)]
-                       text-[var(--km-black)]
-                       px-4 py-2
-                       font-semibold
-                       transition-all duration-300
-                       hover:bg-[var(--km-black)]
-                       hover:text-white w-full"
-          >
-            Ver producto
-          </Link>
-        </div>
-      </div>
-    </div>
-  ))}
-</div>
 
 
         </div>
       </section>
+    <CategoryAdvantages category={category} />
 
       {/* CTA FINAL */}
       <section className="bg-[var(--km-black)] py-20">

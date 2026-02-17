@@ -43,7 +43,7 @@ export default function ProductsSection() {
                   src={category.image}
                   alt={category.title}
                   fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="object-contain object-center  transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
 

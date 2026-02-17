@@ -3,7 +3,8 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { categories } from '@/data/products'
-
+import WhyUs from '@/components/WhyUs'
+import WhatsAppForm from '@/components/WhatsAppForm'
 export default function ProductsPage() {
   return (
     <>
@@ -51,7 +52,7 @@ export default function ProductsPage() {
                     src={category.image}
                     alt={category.title}
                     fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="object-contain object-center transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
 
@@ -86,6 +87,9 @@ export default function ProductsPage() {
           </div>
         </div>
       </section>
+      <WhyUs/>
+      <WhatsAppForm phoneNumber="521234567890" />
+
     </>
   )
 }
