@@ -4,7 +4,8 @@ import Link from 'next/link'
 
 export default function Hero() {
   return (
-    <section className="relative h-screen w-full overflow-hidden">
+    <section className="relative min-h-screen w-full overflow-hidden">
+      
       {/* Background image */}
       <div
         className="absolute inset-0 bg-cover bg-center"
@@ -13,51 +14,63 @@ export default function Hero() {
         }}
       />
 
-      {/* Overlay profesional (no difuminado) */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/55 to-black/40" />
 
       {/* Content */}
-      <div className="relative z-10 h-full flex items-center pt-20">
-        <div className="container-km">
-          <div className="max-w-3xl space-y-6">
+      <div className="relative z-10 flex items-center min-h-screen pt-24">
+        
+        {/* Contenedor alineado totalmente a la izquierda */}
+        <div className="w-full px-6 md:px-16 lg:px-24">
+          
+          <div className="max-w-3xl space-y-6 text-left">
+
             {/* Subtitle */}
-            <span className="subtitle text-white/90">
+            <p className="uppercase tracking-[0.2em] text-sm md:text-base text-[var(--km-red)] font-semibold">
               Maquinaria Industrial y de Construcción
-            </span>
+            </p>
 
             {/* Title */}
-            <h1 className="title-primary text-white">
-              Soluciones Confiables en
-              <br />
-              Maquinaria Pesada
+            <h1
+              className="text-white font-extrabold leading-tight en
+                         text-4xl sm:text-5xl md:text-6xl lg:text-7xl"
+            >
+              Soluciones Confiables en{' '}
+              <span className="block sm:inline">
+                Maquinaria Pesada
+              </span>
             </h1>
 
             {/* Description */}
-            <p className="text-lg text-white/90 max-w-xl">
+            <p className="text-white/90 text-base sm:text-lg max-w-xl">
               Equipos de alto rendimiento para optimizar tus operaciones.
-              Montacargas, plataformas elevadoras y maquinaria industrial
-              diseñada para los retos más exigentes.
+              Montacargas, plataformas elevadoras y maquinaria industrial diseñada
+              para los retos más exigentes.
             </p>
 
-            {/* Actions */}
-            <div className="flex flex-wrap items-center gap-4 pt-4">
-              <Link href="/productos" className="btn-primary">
+            {/* Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 pt-4 items-start">
+
+              <Link
+                href="/productos"
+                className="w-fit bg-[var(--km-red)] text-white
+                           px-6 py-3 font-semibold
+                           transition-all duration-300
+                           hover:opacity-90"
+              >
                 Ver Productos
               </Link>
 
               <Link
                 href="/contacto"
-                className="inline-flex items-center justify-center
-                           border border-white
-                           text-white
-                           px-6 py-3
-                           font-semibold
+                className="w-fit border border-white text-white
+                           px-6 py-3 font-semibold
                            transition-all duration-300
                            hover:bg-white hover:text-[var(--km-black)]"
               >
                 Solicitar Cotización
               </Link>
+
             </div>
+
           </div>
         </div>
       </div>

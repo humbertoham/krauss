@@ -8,34 +8,43 @@ import WhatsAppForm from '@/components/WhatsAppForm'
 export default function ProductsPage() {
   return (
     <>
-      {/* HERO */}
-      <section className="relative py-24 w-full overflow-hidden">
-         <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/layout/products.jpg')" }}
-        />
-        <div className="absolute inset-0 bg-black/60" />
+     {/* HERO */}
+<section className="relative min-h-[90vh] w-full overflow-hidden flex items-center justify-center text-center">
+  {/* Background */}
+  <div
+    className="absolute inset-0 bg-cover bg-center"
+    style={{ backgroundImage: "url('/images/layout/products.jpg')" }}
+  />
 
-        <div className="relative z-10 h-full flex items-center pt-20">
-          <div className="container-km">
-            <div className="max-w-3xl bg-[rgba(28,28,28,0.92)] p-10 shadow-strong">
-              <span className="subtitle text-[var(--km-red)]">
-                Productos
-              </span>
+  {/* Content */}
+  <div className="relative z-10 px-6 w-full max-w-[1600px] mx-auto">
+    
+    <span className="text-[var(--km-red)] tracking-[0.35em] text-sm font-semibold uppercase">
+      Productos
+    </span>
 
-              <h1 className="title-primary text-white mt-4">
-                Categorías de Maquinaria
-              </h1>
+    <h1 className="
+      mt-6
+      text-white
+      text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl
+      font-black
+      tracking-[0.06em]
+      leading-[1.05]
+      w-full
+    ">
+      CATEGORÍAS DE MAQUINARIA
+    </h1>
 
-              <p className="text-white/90 text-lg mt-6 max-w-xl">
-                Explora nuestras categorías de maquinaria industrial y de
-                construcción. Nuestro equipo puede asesorarte para encontrar
-                el equipo ideal según tus necesidades.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+    {/* Línea ahora del mismo ancho que el párrafo */}
+    <div className="h-[5px] bg-white mx-auto mt-10 w-full max-w-[1200px]" />
+
+    <p className="text-white/85 text-base md:text-lg mt-10 max-w-[1200px] mx-auto leading-relaxed">
+      Explora nuestras categorías de maquinaria industrial y de construcción. 
+      Nuestro equipo puede asesorarte para encontrar el equipo ideal según tus necesidades operativas.
+    </p>
+
+  </div>
+</section>
 
       {/* CATEGORIES GRID */}
       <section className="py-24 bg-[var(--km-white)]">
@@ -49,7 +58,7 @@ export default function ProductsPage() {
                 {/* Image */}
                 <div className="relative h-56">
                   <Image
-                    src={category.image}
+                    src={category.imageP}
                     alt={category.title}
                     fill
                     className="object-contain object-center transition-transform duration-500 group-hover:scale-105"

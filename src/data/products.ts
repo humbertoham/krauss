@@ -35,6 +35,7 @@ export type ProductCategory = {
   title: string
   description: string
   image: string
+  imageP: string
   products: Product[]
   advantages: CategoryAdvantage[]   
   functions?: CategoryFunction[]
@@ -46,7 +47,8 @@ export const categories: ProductCategory[] = [
     title: 'Carretilla Elevadora Eléctrica',
     description:
       'Carretillas elevadoras eléctricas diseñadas para operaciones eficientes, silenciosas y libres de emisiones en entornos industriales.',
-    image: '/images/montacarga.png',
+    image: '/images/montacarga.jpg',
+    imageP: '/images/montacarga.png',
     functions: [
   {
     title: 'Manipulación eficiente de cargas pesadas',
@@ -412,7 +414,8 @@ configurations: [
     title: 'Apilador',
     description:
       'Apiladores industriales ideales para el manejo de cargas en espacios reducidos y operaciones logísticas.',
-    image: '/images/apilador.png',
+    image: '/images/apilador.jpg',
+    imageP: '/images/apilador.png',
     functions: [
   {
     title: 'Apilamiento vertical eficiente',
@@ -633,7 +636,8 @@ configurations: [
     title: 'Plataforma Elevadora de Tijera',
     description:
       'Plataformas elevadoras de tijera para trabajos en altura con máxima estabilidad y seguridad.',
-    image: '/images/tijera.png',
+    image: '/images/tijera.jpg',
+    imageP: '/images/tijera.png',
     functions: [
   {
     title: 'Trabajo seguro en altura',

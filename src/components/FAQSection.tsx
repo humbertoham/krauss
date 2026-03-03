@@ -41,41 +41,46 @@ export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(null)
 
   return (
-    <section className="py-24 bg-[var(--km-white)]">
-      <div className="container-km">
-        {/* Header */}
-        <div className="max-w-2xl mb-14">
+    <section className="py-28 bg-[var(--km-white)]">
+      
+      {/* Alineado como Hero */}
+      <div className="w-full px-6 md:px-16 lg:px-24">
+        
+        {/* Header más grande */}
+        <div className="max-w-3xl mb-16">
           <span className="subtitle">
             Preguntas Frecuentes
           </span>
 
-          <h2 className="title-secondary mt-3">
-            Resolvemos tus Dudas
+          <h2 className="title-secondary font-black mt-3">
+            RESOLVEMOS TUS DUDAS
           </h2>
 
-          <p className="text-body mt-4">
+          <p className="text-body mt-4 text-base md:text-lg">
             Aquí respondemos las preguntas más comunes sobre nuestros equipos,
             procesos de compra y soporte técnico.
           </p>
         </div>
 
-        {/* FAQ List */}
-        <div className="max-w-3xl space-y-4">
+        {/* FAQ List más ancho */}
+        <div className="max-w-4xl space-y-6">
           {faqs.map((faq, index) => {
             const isOpen = openIndex === index
 
             return (
               <div
                 key={faq.question}
-                className="border border-black/10 bg-white"
+                className="border border-black/10 bg-white
+                           transition-all duration-300
+                           hover:border-black/30"
               >
                 {/* Question */}
                 <button
                   onClick={() => setOpenIndex(isOpen ? null : index)}
-                  className="w-full flex items-center justify-between gap-4
-                             px-6 py-5 text-left"
+                  className="w-full flex items-center justify-between gap-6
+                             px-8 py-6 text-left"
                 >
-                  <span className="font-title text-base text-[var(--km-black)]">
+                  <span className="font-title text-lg md:text-xl text-[var(--km-black)]">
                     {faq.question}
                   </span>
 
@@ -84,7 +89,7 @@ export default function FAQSection() {
                     transition={{ duration: 0.25 }}
                     className="text-[var(--km-red)]"
                   >
-                    <FiChevronDown size={20} />
+                    <FiChevronDown size={24} />
                   </motion.span>
                 </button>
 
@@ -98,7 +103,7 @@ export default function FAQSection() {
                       transition={{ duration: 0.3, ease: 'easeInOut' }}
                       className="overflow-hidden"
                     >
-                      <div className="px-6 pb-6 text-[var(--km-gray-dark)] leading-relaxed">
+                      <div className="px-8 pb-8 text-[var(--km-gray-dark)] text-base md:text-lg leading-relaxed">
                         {faq.answer}
                       </div>
                     </motion.div>
@@ -108,6 +113,7 @@ export default function FAQSection() {
             )
           })}
         </div>
+
       </div>
     </section>
   )

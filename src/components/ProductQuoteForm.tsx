@@ -45,8 +45,8 @@ ${message}
     <section className="py-24 bg-[var(--km-white)] border-t border-black/10">
       <div className="container-km max-w-4xl">
         <div className="mb-12">
-          <h2 className="title-secondary">
-            Solicitar Cotización
+          <h2 className="title-secondary font-black text-normal">
+            SOLICITAR COTIZACIÓN
           </h2>
 
           <p className="text-body mt-4">

@@ -23,8 +23,8 @@ export default function RelatedProducts({
     <section className="mt-24">
       <div className="container-km">
         <div className="max-w-2xl mb-12">
-          <h2 className="title-secondary">
-            Productos Similares
+          <h2 className="title-secondary font-black text-normal">
+            PRODUCTOS SIMILARES
           </h2>
 
           <p className="text-body mt-4">

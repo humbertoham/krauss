@@ -30,44 +30,60 @@ export default async function CategoryPage({ params }: PageProps) {
 
   return (
     <>
-      {/* HERO CATEGORÍA */}
-      <section className="relative py-24  w-full overflow-hidden">
-        {/* Background */}
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url('${category.image}')` }}
-        />
+    {/* HERO CATEGORÍA */}
+<section className="relative min-h-screen w-full overflow-hidden">
 
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-black/60" />
+  {/* Background */}
+  <div
+    className="absolute inset-0 bg-cover 
+           bg-[position:80%_center] 
+           md:bg-center"
+    style={{ backgroundImage: `url('${category.image}')` }}
+  />
 
-        {/* Content */}
-        <div className="relative z-10 h-full flex items-center pt-20">
-          <div className="container-km">
-            <div className="max-w-3xl bg-[rgba(28,28,28,0.92)] p-10 shadow-strong">
-              <span className="subtitle text-[var(--km-red)]">
-                Categoría
-              </span>
 
-              <h1 className="title-primary text-white mt-4">
-                {category.title}
-              </h1>
+  {/* Content */}
+  <div className="relative z-10 flex items-center min-h-screen pt-24">
+    <div className="w-full px-6 md:px-16 lg:px-24">
+      
+      <div className="max-w-4xl text-left space-y-6">
 
-              <p className="text-white/90 text-lg mt-6 max-w-xl">
-                {category.description}
-              </p>
-            </div>
-          </div>
+        {/* Subtitle */}
+        <p className="uppercase tracking-[0.2em] text-sm md:text-base text-[var(--km-red)] font-semibold">
+          Categoría
+        </p>
+
+        {/* Title */}
+        <h1
+          className="text-white font-black leading-tight
+                     text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl"
+        >
+          {category.title}
+        </h1>
+
+        {/* Description */}
+        <p className="text-white/90 text-base sm:text-lg md:text-xl max-w-2xl">
+          {category.description}
+        </p>
+
+        {/* Línea decorativa */}
+        <div className="pt-6">
+          <div className="h-[5px] w-1/2 bg-[var(--km-white)]" />
         </div>
-      </section>
 
+      </div>
+
+    </div>
+  </div>
+
+</section>
       {/* CONTENT */}
       <section className="py-24 bg-[var(--km-white)]">
         <div className="container-km">
           {/* Placeholder de productos */}
           <div className="max-w-2xl mb-12">
-            <h2 className="title-secondary">
-              Equipos Disponibles
+            <h2 className="title-secondary font-blakc">
+              EQUIPOS DISPONIBLES
             </h2>
 
             <p className="text-body mt-4">
@@ -86,29 +102,31 @@ export default async function CategoryPage({ params }: PageProps) {
       </section>
     <CategoryAdvantages category={category} />
 
-      {/* CTA FINAL */}
-      <section className="bg-[var(--km-black)] py-20">
-        <div className="container-km text-center">
-          <h2 className="font-title text-3xl md:text-4xl text-white mb-6">
-            ¿Necesitas Asesoría Especializada?
-          </h2>
+     {/* CTA FINAL */}
+<section className="bg-[var(--km-black)] py-24">
+  <div className="container-km text-center">
 
-          <p className="text-white/90 max-w-2xl mx-auto mb-8">
-            Nuestro equipo puede ayudarte a seleccionar el equipo ideal dentro
-            de la categoría <strong>{category.title}</strong>, según tus
-            necesidades operativas y presupuesto.
-          </p>
+    <h2 className="text-3xl md:text-4xl text-white font-black uppercase mb-8">
+      ¿NECESITAS ASESORÍA ESPECIALIZADA?
+    </h2>
 
-          <a
-            href={whatsappLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-primary"
-          >
-            Solicitar Cotización
-          </a>
-        </div>
-      </section>
+    <p className="text-white/90 text-normal text-lg max-w-3xl mx-auto mb-10">
+      Nuestro equipo puede ayudarte a seleccionar el equipo ideal dentro
+      de la categoría <strong>{category.title}</strong>, según tus
+      necesidades operativas y presupuesto.
+    </p>
+
+    <a
+      href={whatsappLink}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="btn-primary"
+    >
+      SOLICITAR COTIZACIÓN
+    </a>
+
+  </div>
+</section>
     </>
   )
 }

@@ -26,30 +26,49 @@ Mensaje: ${message}
   return (
     <>
       {/* HERO */}
-      <section className="relative py-24 w-full overflow-hidden">
-        <div className="absolute inset-0 bg-black/60" />
+    {/* HERO CONTACTO */}
+<section className="relative min-h-[90vh] w-full overflow-hidden flex items-center justify-center text-center">
+  
+  {/* Background */}
+  <div
+    className="absolute inset-0 bg-cover bg-center"
+    style={{ backgroundImage: "url('/images/layout/contacto.jpg')" }}
+  />
 
-        <div className="relative z-10 h-full flex items-center pt-20">
-          <div className="container-km">
-            <div className="max-w-3xl bg-[rgba(28,28,28,0.92)] p-10 shadow-strong">
-              <span className="subtitle text-[var(--km-red)]">
-                Contáctanos
-              </span>
+  
 
-              <h1 className="title-primary text-white mt-4">
-                Solicita Información o
-                <br />
-                Cotiza tu Equipo
-              </h1>
+  {/* Content */}
+  <div className="relative z-10 px-6 w-full max-w-[1600px] mx-auto">
 
-              <p className="text-white/90 text-lg mt-6 max-w-xl">
-                Nuestro equipo está listo para asesorarte y ayudarte a encontrar
-                la maquinaria ideal para tu operación.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+    <span className="text-[var(--km-red)] tracking-[0.35em] text-sm font-black uppercase">
+      CONTÁCTANOS
+    </span>
+
+    <h1 className="
+      mt-6
+      text-white
+      text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl
+      font-black
+      tracking-[0.05em]
+      leading-[1.05]
+      w-full
+      uppercase
+    ">
+      SOLICITA INFORMACIÓN O
+      <br className="hidden md:block" />
+      COTIZA TU EQUIPO
+    </h1>
+
+    {/* Línea decorativa */}
+    <div className="h-[5px] bg-white mx-auto mt-10 w-full max-w-[1000px]" />
+
+    <p className="text-white/90 text-lg md:text-xl mt-10 max-w-[1000px] mx-auto leading-relaxed">
+      Nuestro equipo está listo para asesorarte y ayudarte a encontrar
+      la maquinaria ideal para tu operación.
+    </p>
+
+  </div>
+</section>
 
       {/* FORM SECTION */}
       <section className="py-24 bg-[var(--km-white)]">

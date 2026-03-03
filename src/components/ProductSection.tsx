@@ -9,15 +9,18 @@ export default function ProductsSection() {
 
   return (
     <section id="productos" className="py-24 bg-[var(--km-white)]">
-      <div className="container-km">
+      
+      {/* Contenedor alineado a la izquierda */}
+      <div className="w-full px-6 md:px-16 lg:px-24">
+
         {/* Header */}
-        <div className="max-w-2xl mb-14">
+        <div className="max-w-3xl mb-16">
           <span className="subtitle">
             Nuestro Catálogo
           </span>
 
-          <h2 className="title-secondary mt-3">
-            Maquinaria para Cada Necesidad
+          <h2 className="title-secondary font-black mt-3">
+            MAQUINARIA PARA CADA NECESIDAD
           </h2>
 
           <p className="text-body mt-4">
@@ -28,31 +31,35 @@ export default function ProductsSection() {
         </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10">
           {featuredCategories.map((category) => (
             <div
               key={category.slug}
               className="group relative overflow-hidden
                          border border-black/10
                          bg-white
-                         shadow-soft"
+                         shadow-soft
+                         transition-all duration-300
+                         hover:shadow-xl"
             >
               {/* Image */}
-              <div className="relative h-56 overflow-hidden">
+              <div className="relative h-64 md:h-72 xl:h-80 overflow-hidden">
                 <Image
-                  src={category.image}
+                  src={category.imageP}
                   alt={category.title}
                   fill
-                  className="object-contain object-center  transition-transform duration-500 group-hover:scale-105"
+                  className="object-contain object-center
+                             transition-transform duration-500
+                             group-hover:scale-105"
                 />
               </div>
 
               {/* Overlay on hover */}
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition pointer-events-none" />
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition pointer-events-none" />
 
               {/* Content */}
-              <div className="relative p-6 flex flex-col gap-4">
-                <h3 className="font-title text-lg text-[var(--km-black)]">
+              <div className="relative p-8 flex flex-col gap-5">
+                <h3 className="font-title text-xl text-[var(--km-black)]">
                   {category.title}
                 </h3>
 
@@ -61,11 +68,12 @@ export default function ProductsSection() {
                   className="inline-flex items-center justify-center
                              border border-[var(--km-black)]
                              text-[var(--km-black)]
-                             px-4 py-2
+                             px-5 py-3
                              text-sm font-semibold
                              transition-all duration-300
                              hover:bg-[var(--km-black)]
-                             hover:text-white"
+                             hover:text-white
+                             w-fit"
                 >
                   Ver categoría
                 </Link>
@@ -75,7 +83,7 @@ export default function ProductsSection() {
         </div>
 
         {/* CTA Ver todos */}
-        <div className="mt-16 text-center">
+        <div className="mt-20 text-center">
           <Link
             href="/productos"
             className="btn-primary"
@@ -83,6 +91,7 @@ export default function ProductsSection() {
             Ver todos los productos
           </Link>
         </div>
+
       </div>
     </section>
   )

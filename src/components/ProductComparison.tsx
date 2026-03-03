@@ -40,8 +40,8 @@ export default function ProductComparison({
     <section className="py-24 bg-[var(--km-white)] border-t border-black/10">
       <div className="container-km">
         <div className="mb-12">
-          <h2 className="title-secondary">
-            Comparar Especificaciones
+          <h2 className="title-secondary font-black text-normal">
+            COMPARAR ESPECIFICACIONES
           </h2>
 
           <p className="text-body mt-4">

@@ -7,17 +7,17 @@
    ========================= */
 
 @font-face {
-  font-family: 'Allumi Std';
-  src: url('/fonts/allumi-std-regular.woff2') format('woff2');
-  font-weight: 400;
+  font-family: 'Encode';
+  src: url('/fonts/EncodeSansExpanded-SemiBold.ttf') format('truetype');
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Allumi Std';
-  src: url('/fonts/allumi-std-bold.woff2') format('woff2');
-  font-weight: 700;
+  font-family: 'Encode';
+  src: url('/fonts/EncodeSansExpanded-ExtraBold.ttf') format('truetype');
+  font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
@@ -83,15 +83,21 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Allumi Std', sans-serif;
+  font-family: 'Encode', sans-serif;
   letter-spacing: 0.02em;
 }
 
 p {
   line-height: 1.7;
-  color: var(--km-gray);
 }
 
+.pg{
+  text-color:var(--km-gray)
+}
+
+.en{
+  font-family: 'Encode', sans-serif !important;
+}
 /* =========================
    COMPONENT CLASSES
    ========================= */
@@ -102,12 +108,12 @@ p {
   }
 
   .title-primary {
-    font-family: 'Allumi Std', sans-serif;
+    font-family: 'Encode', sans-serif;
     @apply text-4xl md:text-5xl font-bold text-[var(--km-black)];
   }
 
   .title-secondary {
-    font-family: 'Allumi Std', sans-serif;
+    font-family: 'Encode', sans-serif;
     @apply text-2xl md:text-3xl font-bold text-[var(--km-gray-dark)];
   }
 

@@ -5,141 +5,176 @@ import Link from 'next/link'
 import StatsSection from '@/components/StatsSection'
 import CTASection from '@/components/CTASection'
 
+import { Handshake, BadgeCheck, ShieldCheck } from 'lucide-react'
+
+
 export default function AboutPage() {
+
+  
+  const values = [
+    {
+      title: 'COMPROMISO',
+      text: 'Acompañamos a nuestros clientes en cada etapa del proceso con atención personalizada.',
+      icon: Handshake,
+    },
+    {
+      title: 'CALIDAD',
+      text: 'Trabajamos únicamente con equipos que cumplen altos estándares de desempeño y seguridad.',
+      icon: BadgeCheck,
+    },
+    {
+      title: 'CONFIANZA',
+      text: 'Construimos relaciones sólidas basadas en transparencia y resultados.',
+      icon: ShieldCheck,
+    },
+  ]
+
+
   return (
     <>
-      {/* HERO ABOUT */}
-      <section className="relative py-24 w-full overflow-hidden">
-        {/* Background image */}
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/layout/about.jpg')" }}
-        />
+ {/* HERO SOBRE NOSOTROS */}
+<section className="relative min-h-[90vh] w-full overflow-hidden flex items-center justify-center text-center">
+  
+  {/* Background */}
+  <div
+    className="absolute inset-0 bg-cover bg-center"
+    style={{ backgroundImage: "url('/images/layout/nosotros.jpg')" }}
+  />
 
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-black/60" />
 
-        {/* Content */}
-        <div className="relative z-10 h-full flex items-center pt-20">
-          <div className="container-km">
-            <div className="max-w-3xl bg-[rgba(28,28,28,0.92)] p-10 shadow-strong">
-              <span className="subtitle text-[var(--km-red)]">
-                Sobre Nosotros
-              </span>
+  {/* Content */}
+  <div className="relative z-10 px-6 w-full max-w-[1400px] mx-auto">
 
-              <h1 className="title-primary text-white mt-4">
-                Experiencia, Confianza y
-                <br />
-                Maquinaria de Alto Desempeño
-              </h1>
+    <span className="text-[var(--km-red)] tracking-[0.35em] text-sm font-black uppercase">
+      Sobre Nosotros
+    </span>
 
-              <p className="text-white/90 text-lg mt-6 max-w-xl">
-                En Krauss Machinery trabajamos con un enfoque claro: ofrecer
-                soluciones confiables en maquinaria industrial y de
-                construcción que impulsen la productividad de nuestros
-                clientes.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+    <h1 className="
+      mt-6
+      text-white
+       text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl
+      font-black
+      tracking-[0.04em]
+      leading-[1.05]
+      uppercase
+    ">
+      Experiencia, Confianza y
+      <br className="hidden md:block" />
+      Maquinaria de Alto Desempeño
+    </h1>
+
+    {/* Línea decorativa más larga */}
+    <div className="h-[5px] bg-white mx-auto mt-10 w-full max-w-[1100px]" />
+
+    <p className="text-white/90 text-base md:text-lg mt-10 max-w-[1100px] mx-auto leading-relaxed">
+      En Krauss Machinery trabajamos con un enfoque claro: ofrecer
+      soluciones confiables en maquinaria industrial y de construcción
+      que impulsen la productividad de nuestros clientes.
+    </p>
+
+  </div>
+</section>
 
       {/* ABOUT CONTENT */}
-      <section className="py-24 bg-[var(--km-white)]">
-        <div className="container-km">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            {/* Text */}
-            <div className="space-y-6">
-              <h2 className="title-secondary">
-                Quiénes Somos
-              </h2>
+    <section
+      id="nosotros"
+      className="relative min-h-[80vh] w-full overflow-hidden bg-[var(--km-white)]"
+    >
+      {/* Background image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{
+          backgroundImage: "url('/images/layout/about.png')",
+        }}
+      />
 
-              <p className="text-body max-w-xl">
-                Somos una empresa especializada en la comercialización de
-                maquinaria industrial y de construcción, enfocada en brindar
-                equipos de calidad, asesoría técnica y soluciones adaptadas a
-                las necesidades operativas de cada cliente.
-              </p>
+    
 
-              <p className="text-body max-w-xl">
-                Nuestro compromiso es acompañar a nuestros clientes desde la
-                selección del equipo hasta su operación, garantizando
-                confiabilidad, respaldo técnico y una relación comercial a
-                largo plazo.
-              </p>
+      {/* Content */}
+      <div className="relative z-10 flex items-center min-h-[80vh] py-24">
+        <div className="w-full px-6 md:px-16 lg:px-24">
+          <div className="max-w-3xl space-y-6 text-left">
 
-              <Link
+            {/* Subtitle */}
+            
+
+            {/* Title (mismo tamaño original) */}
+            <h2 className="title-secondary font-black">
+               QUIÉNES SOMOS
+            </h2>
+
+            {/* Description */}
+            <p className="text-base font-normal text-black/50 max-w-xl">
+              Somos una empresa especializada en la comercialización de maquinaria industrial y de construcción, enfocada en brindar equipos de calidad, asesoría técnica y soluciones adaptadas a las necesidades operativas de cada cliente.
+            </p>
+            <p className="text-base font-normal text-black/50 max-w-xl">
+            Nuestro compromiso es acompañar a nuestros clientes desde la selección del equipo hasta su operación, garantizando confiabilidad, respaldo técnico y una relación comercial a largo plazo.
+            </p>
+
+            {/* Botón original */}
+            <div className="pt-4">
+               <Link
                 href="/contacto"
-                className="inline-flex items-center justify-center
-                           border border-[var(--km-black)]
-                           text-[var(--km-black)]
-                           px-6 py-3
-                           font-semibold
+                className="w-fit bg-[var(--km-red)] text-white
+                           px-6 py-3 font-semibold
                            transition-all duration-300
-                           hover:bg-[var(--km-black)]
-                           hover:text-white"
+                           hover:opacity-90"
               >
                 Contáctanos
               </Link>
             </div>
 
-            {/* Image */}
-            <div className="relative h-80 lg:h-[420px]">
-              <Image
-                src="/images/layout/machinary.jpg"
-                alt="Maquinaria industrial Krauss Machinery"
-                fill
-                className="object-cover"
-              />
-            </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
       {/* VALUES */}
-      <section className="py-24 bg-black/5">
-        <div className="container-km">
-          <div className="max-w-2xl mb-14">
-            <span className="subtitle">
-              Nuestros Valores
-            </span>
+        <section className="py-28 bg-[#f3f3f3]">
+      <div className="container-km">
+        <div className="max-w-2xl mb-16">
+          <span className="text-[var(--km-red)] font-semibold tracking-[0.15em] uppercase text-sm">
+            Nuestros Valores
+          </span>
 
-            <h2 className="title-secondary mt-3">
-              Lo que Nos Define
-            </h2>
-          </div>
+          <h2 className="mt-3 text-4xl  text-[var(--km-black)] uppercase font-black tracking-[0.03em]">
+            LO QUE NOS DEFINE
+          </h2>
+        </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-            {[
-              {
-                title: 'Compromiso',
-                text: 'Acompañamos a nuestros clientes en cada etapa del proceso con atención personalizada.',
-              },
-              {
-                title: 'Calidad',
-                text: 'Trabajamos únicamente con equipos que cumplen altos estándares de desempeño y seguridad.',
-              },
-              {
-                title: 'Confianza',
-                text: 'Construimos relaciones sólidas basadas en transparencia y resultados.',
-              },
-            ].map((value) => (
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+          {values.map((value) => {
+            const Icon = value.icon
+
+            return (
               <div
                 key={value.title}
-                className="border border-black/10 bg-white p-8"
+                className="relative bg-white p-10"
               >
-                <h3 className="font-title text-lg text-[var(--km-black)] mb-4">
+                {/* Icon */}
+                <div className="absolute top-8 right-8">
+                  <Icon
+                    size={42}
+                    strokeWidth={2}
+                    className="text-[var(--km-red)]"
+                  />
+                </div>
+
+                {/* Title */}
+                <h3 className="text-[var(--km-red)] font-black uppercase tracking-[0.05em] mb-5">
                   {value.title}
                 </h3>
 
-                <p className="text-body">
+                {/* Text */}
+                <p className="text-gray-600 leading-relaxed">
                   {value.text}
                 </p>
               </div>
-            ))}
-          </div>
+            )
+          })}
         </div>
-      </section>
+      </div>
+    </section>
 
       {/* STATS */}
       <StatsSection />
@@ -148,4 +183,4 @@ export default function AboutPage() {
       <CTASection />
     </>
   )
-}
+} 

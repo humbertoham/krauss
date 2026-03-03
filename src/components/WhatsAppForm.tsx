@@ -55,8 +55,8 @@ ${message}
             Contáctanos
           </span>
 
-          <h2 className="title-secondary mt-4">
-            Solicita Información
+          <h2 className="title-secondary font-black mt-4">
+            SOLICITA INFORMACIÓN
           </h2>
 
           <p className="text-body mt-6">
