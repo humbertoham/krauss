@@ -1,8 +1,11 @@
 'use client'
 
 import Link from 'next/link'
+import { useTranslation } from 'react-i18next'
 
 export default function CTASection() {
+  const { t } = useTranslation('cta')
+
   return (
     <section className="bg-[var(--km-black)] py-32">
       
@@ -14,19 +17,17 @@ export default function CTASection() {
           {/* Text */}
           <div className="max-w-2xl space-y-6">
             <span className="subtitle text-[var(--km-red)]">
-              Cotización sin Compromiso
+              {t('subtitle')}
             </span>
 
             <h2 className="font-title text-3xl md:text-4xl lg:text-[40px] text-white font-black uppercase leading-tight">
-              ¿LISTO PARA EQUIPAR TU OPERACIÓN CON
+              {t('title_line1')}
               <br className="hidden sm:block" />
-              MAQUINARIA CONFIABLE?
+              {t('title_line2')}
             </h2>
 
             <p className="text-neutral-400 text-base md:text-lg">
-              Nuestro equipo te asesora para encontrar la maquinaria ideal
-              según tus necesidades operativas, presupuesto y tiempos de
-              entrega.
+              {t('description')}
             </p>
           </div>
 
@@ -39,7 +40,7 @@ export default function CTASection() {
                          px-8 py-4
                          lg:px-14 lg:py-5"
             >
-              Solicitar Cotización
+              {t('button_quote')}
             </Link>
 
             <Link
@@ -53,7 +54,7 @@ export default function CTASection() {
                          transition-all duration-300
                          hover:bg-white hover:text-[var(--km-black)]"
             >
-              Ver Productos
+              {t('button_products')}
             </Link>
 
           </div>

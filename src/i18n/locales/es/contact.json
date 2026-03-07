@@ -1,0 +1,24 @@
+{
+  "hero": {
+    "subtitle": "CONTÁCTANOS",
+    "title_line1": "SOLICITA INFORMACIÓN O",
+    "title_line2": "COTIZA TU EQUIPO",
+    "description": "Nuestro equipo está listo para asesorarte y ayudarte a encontrar la maquinaria ideal para tu operación."
+  },
+  "form": {
+    "title": "Envíanos un Mensaje",
+    "name_placeholder": "Nombre completo",
+    "company_placeholder": "Empresa (opcional)",
+    "product_placeholder": "Producto o equipo de interés",
+    "message_placeholder": "Mensaje",
+    "button_whatsapp": "Enviar por WhatsApp"
+  },
+  "info": {
+    "title": "Información de Contacto",
+    "country": "México",
+    "note": "📌 Al enviar el formulario, serás redirigido a WhatsApp para continuar la conversación de manera directa con nuestro equipo comercial."
+  },
+  "whatsapp": {
+    "message_template": "Hola, mi nombre es {{name}}. Empresa: {{company}}. Producto de interés: {{product}}. Mensaje: {{message}}"
+  }
+}

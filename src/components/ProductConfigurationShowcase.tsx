@@ -2,13 +2,18 @@
 
 import { useState } from 'react'
 import Image from 'next/image'
-import { Product } from '@/data/products'
+import { useTranslation } from 'react-i18next'
+
+import type { Product } from '@/data/product-types'
 
 type Props = {
   product: Product
 }
 
 export default function ProductConfigurationShowcase({ product }: Props) {
+
+  const { t } = useTranslation('products')
+
   if (!product.heroImage || !product.configurations?.length) {
     return null
   }
@@ -20,24 +25,28 @@ export default function ProductConfigurationShowcase({ product }: Props) {
     <section className="py-32 bg-[var(--km-white)] border-t border-black/10">
       <div className="container-km">
 
-        {/* Header */}
+        {/* HEADER */}
         <div className="mb-16 max-w-3xl">
+
           <span className="subtitle text-[var(--km-red)]">
-            Personalización
+            {t('configuration.subtitle')}
           </span>
 
           <h2 className="title-secondary mt-4">
-            Configuración
+            {t('configuration.title')}
           </h2>
 
           <p className="text-body mt-6">
-            Explore las diferentes opciones disponibles para adaptar el equipo a sus necesidades operativas.
+            {t('configuration.description')}
           </p>
+
         </div>
 
-        {/* Botones arriba del grid */}
+        {/* BOTONES */}
         <div className="flex flex-wrap gap-4 mb-12">
+
           {product.configurations.map((config, index) => (
+
             <button
               key={index}
               onClick={() => setActiveIndex(index)}
@@ -51,24 +60,29 @@ export default function ProductConfigurationShowcase({ product }: Props) {
             >
               {config.title}
             </button>
+
           ))}
+
         </div>
 
-        {/* Grid de imágenes */}
+        {/* GRID */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
 
-          {/* IZQUIERDA — HERO */}
+          {/* HERO */}
           <div className="relative h-[500px] border border-black/10 overflow-hidden">
+
             <Image
               src={product.heroImage}
               alt={product.name}
               fill
               className="object-cover"
             />
+
           </div>
 
-          {/* DERECHA — Imagen dinámica */}
+          {/* CONFIG IMAGE */}
           <div className="relative h-[500px] border border-black/10 overflow-hidden">
+
             <Image
               key={activeConfig.image}
               src={activeConfig.image}
@@ -76,6 +90,7 @@ export default function ProductConfigurationShowcase({ product }: Props) {
               fill
               className="object-cover transition-opacity duration-300"
             />
+
           </div>
 
         </div>

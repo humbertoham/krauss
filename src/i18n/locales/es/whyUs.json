@@ -1,0 +1,31 @@
+{
+  "subtitle": "KRAUSS MACHINERY",
+  "title": "¿POR QUÉ ELEGIRNOS?",
+  "description": "Ofrecemos soluciones industriales confiables, eficientes y personalizadas, respaldadas por experiencia técnica y compromiso con la calidad.",
+  "features": [
+    {
+      "title": "CALIDAD CERTIFICADA",
+      "description": "Nuestros equipos cumplen con estándares internacionales de fabricación y exportación, garantizando seguridad y confiabilidad."
+    },
+    {
+      "title": "PRECIOS COMPETITIVOS DE FÁBRICA",
+      "description": "Capacidad de producción directa que nos permite ofrecer soluciones industriales a costos optimizados."
+    },
+    {
+      "title": "ASESORÍA ESPECIALIZADA",
+      "description": "Nuestro equipo técnico analiza sus necesidades operativas para recomendar el equipo ideal."
+    },
+    {
+      "title": "CONFIGURACIÓN PERSONALIZADA",
+      "description": "Adaptamos capacidades, alturas y accesorios para cumplir con los requerimientos específicos de cada cliente."
+    },
+    {
+      "title": "SOPORTE POSTVENTA",
+      "description": "Acompañamiento continuo para garantizar el rendimiento y la vida útil del equipo."
+    },
+    {
+      "title": "ENFOQUE EN EFICIENCIA OPERATIVA",
+      "description": "Soluciones diseñadas para reducir tiempos, optimizar recursos y maximizar productividad."
+    }
+  ]
+}

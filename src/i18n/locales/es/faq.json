@@ -1,0 +1,31 @@
+{
+  "subtitle": "Preguntas Frecuentes",
+  "title": "RESOLVEMOS TUS DUDAS",
+  "description": "Aquí respondemos las preguntas más comunes sobre nuestros equipos, procesos de compra y soporte técnico.",
+  "items": [
+    {
+      "question": "¿Qué tipo de maquinaria ofrecen?",
+      "answer": "Ofrecemos maquinaria industrial y de construcción como montacargas, plataformas elevadoras, miniexcavadoras, cargadoras compactas y equipos especializados para distintas industrias."
+    },
+    {
+      "question": "¿Venden o también rentan equipos?",
+      "answer": "Principalmente nos enfocamos en la venta de maquinaria, sin embargo, podemos asesorarte sobre opciones según tus necesidades operativas y disponibilidad."
+    },
+    {
+      "question": "¿Cómo puedo solicitar una cotización?",
+      "answer": "Puedes solicitar una cotización directamente desde nuestro sitio web en la sección de contacto, o comunicarte con nuestro equipo por teléfono o correo electrónico."
+    },
+    {
+      "question": "¿Ofrecen garantía en los equipos?",
+      "answer": "Sí. Todos nuestros equipos cuentan con garantía conforme a las especificaciones del fabricante y respaldo técnico especializado."
+    },
+    {
+      "question": "¿Realizan envíos a toda la República?",
+      "answer": "Sí, realizamos envíos a toda la República Mexicana. Los tiempos y costos de entrega dependen del tipo de equipo y la ubicación."
+    },
+    {
+      "question": "¿Cuentan con refacciones y servicio técnico?",
+      "answer": "Contamos con soporte técnico y asesoría para refacciones, mantenimiento y operación de los equipos que comercializamos."
+    }
+  ]
+}

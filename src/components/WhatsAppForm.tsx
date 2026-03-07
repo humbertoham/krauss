@@ -1,16 +1,19 @@
 'use client'
 
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 
 type Props = {
-  phoneNumber: string // formato internacional sin +
-  context?: string // opcional: categoría o producto
+  phoneNumber: string
+  context?: string
 }
 
 export default function WhatsAppForm({
   phoneNumber,
   context,
 }: Props) {
+  const { t } = useTranslation('whatsappForm')
+
   const [name, setName] = useState('')
   const [company, setCompany] = useState('')
   const [phone, setPhone] = useState('')
@@ -19,24 +22,23 @@ export default function WhatsAppForm({
 
   const handleSubmit = () => {
     if (!name || !phone) {
-      setError('Por favor completa tu nombre y teléfono.')
+      setError(t('errors.required'))
       return
     }
 
     setError('')
 
-    const text = `
-Hola, me gustaría recibir información.
+    const contextLine = context
+      ? t('whatsapp.context', { context })
+      : ''
 
-${context ? `Interés: ${context}\n` : ''}
-
-Nombre: ${name}
-Empresa: ${company}
-Teléfono: ${phone}
-
-Mensaje:
-${message}
-    `.trim()
+    const text = t('whatsapp.template', {
+      name,
+      company,
+      phone,
+      message,
+      contextLine,
+    })
 
     const encodedText = encodeURIComponent(text)
 
@@ -49,27 +51,28 @@ ${message}
   return (
     <section className="py-32 bg-[var(--km-white)] border-t border-black/10">
       <div className="container-km max-w-3xl">
+
         {/* Header */}
         <div className="mb-14">
           <span className="subtitle text-[var(--km-red)]">
-            Contáctanos
+            {t('subtitle')}
           </span>
 
           <h2 className="title-secondary font-black mt-4">
-            SOLICITA INFORMACIÓN
+            {t('title')}
           </h2>
 
           <p className="text-body mt-6">
-            Completa el formulario y nuestro equipo se pondrá en
-            contacto contigo vía WhatsApp.
+            {t('description')}
           </p>
         </div>
 
         {/* Form */}
         <div className="space-y-6">
+
           <input
             type="text"
-            placeholder="Nombre completo *"
+            placeholder={t('fields.name')}
             value={name}
             onChange={(e) => setName(e.target.value)}
             className="w-full border border-black/20 px-5 py-4 outline-none focus:border-[var(--km-red)] transition"
@@ -77,7 +80,7 @@ ${message}
 
           <input
             type="text"
-            placeholder="Empresa (opcional)"
+            placeholder={t('fields.company')}
             value={company}
             onChange={(e) => setCompany(e.target.value)}
             className="w-full border border-black/20 px-5 py-4 outline-none focus:border-[var(--km-red)] transition"
@@ -85,14 +88,14 @@ ${message}
 
           <input
             type="tel"
-            placeholder="Teléfono de contacto *"
+            placeholder={t('fields.phone')}
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
             className="w-full border border-black/20 px-5 py-4 outline-none focus:border-[var(--km-red)] transition"
           />
 
           <textarea
-            placeholder="Mensaje adicional (opcional)"
+            placeholder={t('fields.message')}
             rows={4}
             value={message}
             onChange={(e) => setMessage(e.target.value)}
@@ -110,8 +113,9 @@ ${message}
             className="w-full bg-[var(--km-black)] text-white py-4 font-semibold
                        transition-all duration-300 hover:bg-[var(--km-red)]"
           >
-            Enviar por WhatsApp
+            {t('button')}
           </button>
+
         </div>
       </div>
     </section>

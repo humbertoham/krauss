@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { FiSend } from 'react-icons/fi'
 
 type ProductQuoteFormProps = {
@@ -14,64 +15,80 @@ export default function ProductQuoteForm({
   productName,
   productModel,
 }: ProductQuoteFormProps) {
+
+  const { t } = useTranslation('products')
+
   const [name, setName] = useState('')
   const [company, setCompany] = useState('')
   const [phone, setPhone] = useState('')
   const [message, setMessage] = useState('')
 
-  const phoneNumber = '520000000000' // 👈 CAMBIA ESTO
+  const phoneNumber = '520000000000'
 
   const handleWhatsApp = () => {
+
     const text = `
-Hola, me gustaría solicitar una cotización.
+${t('quoteForm.whatsappIntro')}
 
-Categoría: ${categoryTitle}
-Producto: ${productName}
-Modelo: ${productModel}
+${t('quoteForm.category')}: ${categoryTitle}
+${t('quoteForm.product')}: ${productName}
+${t('quoteForm.model')}: ${productModel}
 
-Nombre: ${name}
-Empresa: ${company}
-Teléfono: ${phone}
+${t('quoteForm.name')}: ${name}
+${t('quoteForm.company')}: ${company}
+${t('quoteForm.phone')}: ${phone}
 
-Mensaje adicional:
+${t('quoteForm.additionalMessage')}:
 ${message}
     `.trim()
 
     const encodedText = encodeURIComponent(text)
-    window.open(`https://wa.me/${phoneNumber}?text=${encodedText}`, '_blank')
+
+    window.open(
+      `https://wa.me/${phoneNumber}?text=${encodedText}`,
+      '_blank'
+    )
   }
 
   return (
     <section className="py-24 bg-[var(--km-white)] border-t border-black/10">
+
       <div className="container-km max-w-4xl">
+
         <div className="mb-12">
+
           <h2 className="title-secondary font-black text-normal">
-            SOLICITAR COTIZACIÓN
+            {t('quoteForm.title')}
           </h2>
 
           <p className="text-body mt-4">
-            Completa el formulario y recibirás atención personalizada para el equipo{' '}
-            <strong>{productName}</strong>.
+            {t('quoteForm.description', { product: productName })}
           </p>
+
         </div>
 
         <div className="space-y-5">
-          {/* Producto info bloque visual */}
+
+          {/* PRODUCT INFO */}
           <div className="border border-black/10 p-5 bg-gray-50">
+
             <p className="text-sm">
-              <strong>Categoría:</strong> {categoryTitle}
+              <strong>{t('quoteForm.category')}:</strong> {categoryTitle}
             </p>
+
             <p className="text-sm">
-              <strong>Producto:</strong> {productName}
+              <strong>{t('quoteForm.product')}:</strong> {productName}
             </p>
+
             <p className="text-sm">
-              <strong>Modelo:</strong> {productModel}
+              <strong>{t('quoteForm.model')}:</strong> {productModel}
             </p>
+
           </div>
 
           <input
             type="text"
-            placeholder="Nombre completo"
+            placeholder={t('quoteForm.name')}
             value={name}
             onChange={(e) => setName(e.target.value)}
             className="w-full border border-black/20 px-4 py-3 outline-none focus:border-[var(--km-red)] transition"
@@ -79,7 +96,7 @@ ${message}
 
           <input
             type="text"
-            placeholder="Empresa (opcional)"
+            placeholder={t('quoteForm.company')}
             value={company}
             onChange={(e) => setCompany(e.target.value)}
             className="w-full border border-black/20 px-4 py-3 outline-none focus:border-[var(--km-red)] transition"
@@ -87,14 +104,14 @@ ${message}
 
           <input
             type="text"
-            placeholder="Teléfono de contacto"
+            placeholder={t('quoteForm.phone')}
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
             className="w-full border border-black/20 px-4 py-3 outline-none focus:border-[var(--km-red)] transition"
           />
 
           <textarea
-            placeholder="Mensaje adicional (opcional)"
+            placeholder={t('quoteForm.message')}
             rows={4}
             value={message}
             onChange={(e) => setMessage(e.target.value)}
@@ -106,10 +123,13 @@ ${message}
             className="btn-primary flex items-center gap-2"
           >
             <FiSend />
-            Enviar Cotización por WhatsApp
+            {t('quoteForm.button')}
           </button>
+
         </div>
+
       </div>
+
     </section>
   )
 }

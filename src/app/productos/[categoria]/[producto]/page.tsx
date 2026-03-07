@@ -1,12 +1,18 @@
+'use client'
+
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
-import { categories } from '@/data/products'
+import { useTranslation } from 'react-i18next'
+
+import { getProductData } from '@/data/products'
+
 import ProductCarousel from '@/components/ProductCarousel'
 import RelatedProducts from '@/components/RelatedProducts'
 import ProductQuoteForm from '@/components/ProductQuoteForm'
 import ProductComparison from '@/components/ProductComparison'
 import CategoryFunctions from '@/components/CategoryFunctions'
 import ProductConfigurationShowcase from '@/components/ProductConfigurationShowcase'
+import * as React from 'react'
 
 
 type PageProps = {
@@ -16,8 +22,14 @@ type PageProps = {
   }>
 }
 
-export default async function ProductPage({ params }: PageProps) {
-  const { categoria, producto } = await params
+export default function ProductPage({ params }: PageProps) {
+
+  const { categoria, producto } = React.use(params)
+
+  const { t, i18n } = useTranslation('product_page')
+
+  const locale = i18n.resolvedLanguage ?? 'es'
+  const categories = getProductData(locale)
 
   const category = categories.find((c) => c.slug === categoria)
   if (!category) notFound()
@@ -28,75 +40,113 @@ export default async function ProductPage({ params }: PageProps) {
   const whatsappMessage = encodeURIComponent(
     `Hola, me gustaría cotizar el producto ${product.name} (${product.model}).`
   )
+
   const whatsappLink = `https://wa.me/520000000000?text=${whatsappMessage}`
 
   return (
     <>
       <section className="py-24 bg-[var(--km-white)]">
+
         <div className="container-km">
-          {/* Breadcrumb */}
+
+          {/* BREADCRUMB */}
           <div className="mb-8 text-sm text-[var(--km-gray-dark)]">
+
             <Link href="/productos" className="hover:underline">
-              Productos
+              {t('breadcrumb.products')}
             </Link>
+
             <span className="mx-2">/</span>
+
             <Link href={`/productos/${category.slug}`} className="hover:underline">
               {category.title}
             </Link>
+
             <span className="mx-2">/</span>
-            <span className="text-[var(--km-black)] font-semibold">{product.model}</span>
+
+            <span className="text-[var(--km-black)] font-semibold">
+              {product.model}
+            </span>
+
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-            {/* Carousel (usa images[]) */}
+
+            {/* CAROUSEL */}
             <ProductCarousel images={product.images} name={product.name} />
 
-            {/* Info */}
+            {/* INFO */}
             <div>
-              <span className="subtitle text-[var(--km-red)]">{category.title}</span>
 
-              <h1 className="title-primary mt-4">{product.name}</h1>
+              <span className="subtitle text-[var(--km-red)]">
+                {category.title}
+              </span>
 
+              <h1 className="title-primary mt-4">
+                {product.name}
+              </h1>
+
+              {/* TAGS */}
               <div className="mt-3 flex flex-wrap gap-3 text-sm">
+
                 <span className="inline-flex items-center border border-black/10 px-3 py-1">
-                  <strong className="mr-2">Modelo:</strong> {product.model}
+                  <strong className="mr-2">{t('labels.model')}:</strong>
+                  {product.model}
                 </span>
+
                 <span className="inline-flex items-center border border-black/10 px-3 py-1">
-                  <strong className="mr-2">Capacidad:</strong>{' '}
+                  <strong className="mr-2">{t('labels.capacity')}:</strong>
                   {product.capacityKg.toLocaleString()} kg
                 </span>
+
                 <span className="inline-flex items-center border border-black/10 px-3 py-1">
-                  <strong className="mr-2">Ruedas:</strong> {product.wheels}
+                  <strong className="mr-2">{t('labels.wheels')}:</strong>
+                  {product.wheels}
                 </span>
+
               </div>
 
-              <p className="italic text-[var(--km-gray-dark)] mt-6">{product.tagline}</p>
+              <p className="italic text-[var(--km-gray-dark)] mt-6">
+                {product.tagline}
+              </p>
 
-              <p className="text-body mt-6">{product.description}</p>
+              <p className="text-body mt-6">
+                {product.description}
+              </p>
 
-              {/* Specs */}
+              {/* SPECS */}
               <div className="mt-10 border-t border-black/10 pt-8">
-                <h2 className="font-title text-xl mb-6">Especificaciones Técnicas</h2>
+
+                <h2 className="font-title text-xl mb-6">
+                  {t('specs.title')}
+                </h2>
 
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8">
+
                   {product.specs.map((spec) => (
-                    <li key={spec.label} className="flex justify-between border-b border-black/10 pb-2 text-sm">
+                    <li
+                      key={spec.label}
+                      className="flex justify-between border-b border-black/10 pb-2 text-sm"
+                    >
                       <span className="font-semibold">{spec.label}</span>
                       <span className="text-[var(--km-gray-dark)]">{spec.value}</span>
                     </li>
                   ))}
+
                 </ul>
+
               </div>
 
               {/* CTA */}
               <div className="mt-10 flex flex-col sm:flex-row gap-3">
+
                 <a
                   href={whatsappLink}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-primary inline-flex items-center justify-center"
                 >
-                  Solicitar Cotización
+                  {t('cta.quote')}
                 </a>
 
                 <Link
@@ -105,32 +155,37 @@ export default async function ProductPage({ params }: PageProps) {
                              px-6 py-3 font-semibold transition-all duration-300
                              hover:bg-[var(--km-black)] hover:text-white"
                 >
-                  Volver a {category.title}
+                  {t('cta.back', { category: category.title })}
                 </Link>
+
               </div>
+
             </div>
+
           </div>
+
         </div>
+
+        {/* COMPONENTS */}
         <ProductConfigurationShowcase product={product} />
 
         <ProductComparison
-  category={category}
-  currentProduct={product}
-/>
-<CategoryFunctions category={category} />
+          category={category}
+          currentProduct={product}
+        />
 
+        <CategoryFunctions category={category} />
 
         <ProductQuoteForm
-  categoryTitle={category.title}
-  productName={product.name}
-  productModel={product.model}
-/>
+          categoryTitle={category.title}
+          productName={product.name}
+          productModel={product.model}
+        />
 
         <RelatedProducts
-  category={category}
-  currentProductSlug={product.slug}
-/>
-
+          category={category}
+          currentProductSlug={product.slug}
+        />
 
       </section>
     </>

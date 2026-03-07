@@ -1,0 +1,64 @@
+{
+  "related": {
+    "title": "RELATED PRODUCTS",
+    "description": "Other equipment available within the {{category}} category.",
+    "capacity": "Capacity",
+    "viewProduct": "View product",
+    "viewMore": "View more from {{category}}"
+  },
+  "catalog": {
+    "subtitle": "Our Catalog",
+    "title": "MACHINERY FOR EVERY NEED",
+    "description": "We offer a wide range of industrial and construction equipment designed to maximize efficiency, safety, and performance in every operation.",
+    "viewCategory": "View category",
+    "viewAll": "View all products"
+  },
+  "configuration": {
+    "subtitle": "Customization",
+    "title": "Configuration",
+    "description": "Explore the different options available to adapt the equipment to your operational needs."
+  },
+   "comparison": {
+    "title": "COMPARE SPECIFICATIONS",
+    "description": "Comparing {{current}} with {{comparison}}.",
+    "specification": "Specification",
+    "capacity": "Capacity (kg)",
+    "wheels": "Wheels"
+  },
+  "categoryGrid": {
+    "search": "Search by model or name...",
+    "minCapacity": "Minimum capacity (kg)",
+    "maxCapacity": "Maximum capacity (kg)",
+    "wheelsAll": "Wheels (all)",
+    "threeWheels": "3 wheels",
+    "fourWheels": "4 wheels",
+    "results": "{{count}} results found",
+    "capacity": "Capacity",
+    "viewProduct": "View product"
+  }, 
+   "advantages": {
+    "subtitle": "WHY CHOOSE KRAUSS?",
+    "title": "ADVANTAGES OF OUR {{category}}",
+    "description": "Equipment designed to deliver performance, safety, and efficiency in every industrial operation."
+  },
+  "functions": {
+    "subtitle": "Operational Functionality",
+    "title": "Functions of the {{category}}",
+    "description": "Designed to maximize efficiency, safety, and performance in every industrial operation."
+  },
+  "quoteForm": {
+    "title": "REQUEST A QUOTE",
+    "description": "Complete the form and receive personalized assistance for the {{product}} equipment.",
+    "category": "Category",
+    "product": "Product",
+    "model": "Model",
+    "name": "Full name",
+    "company": "Company (optional)",
+    "phone": "Contact phone",
+    "message": "Additional message (optional)",
+    "button": "Send Quote via WhatsApp",
+    "whatsappIntro": "Hello, I would like to request a quote.",
+    "additionalMessage": "Additional message"
+  }
+
+}

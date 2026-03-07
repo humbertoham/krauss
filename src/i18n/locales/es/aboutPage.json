@@ -1,0 +1,32 @@
+{
+  "hero": {
+    "subtitle": "Sobre Nosotros",
+    "title_line1": "Experiencia, Confianza y",
+    "title_line2": "Maquinaria de Alto Desempeño",
+    "description": "En Krauss Machinery trabajamos con un enfoque claro: ofrecer soluciones confiables en maquinaria industrial y de construcción que impulsen la productividad de nuestros clientes."
+  },
+  "about_section": {
+    "title": "QUIÉNES SOMOS",
+    "paragraph1": "Somos una empresa especializada en la comercialización de maquinaria industrial y de construcción, enfocada en brindar equipos de calidad, asesoría técnica y soluciones adaptadas a las necesidades operativas de cada cliente.",
+    "paragraph2": "Nuestro compromiso es acompañar a nuestros clientes desde la selección del equipo hasta su operación, garantizando confiabilidad, respaldo técnico y una relación comercial a largo plazo.",
+    "button_contact": "Contáctanos"
+  },
+  "values": {
+    "subtitle": "Nuestros Valores",
+    "title": "LO QUE NOS DEFINE",
+    "items": [
+      {
+        "title": "COMPROMISO",
+        "text": "Acompañamos a nuestros clientes en cada etapa del proceso con atención personalizada."
+      },
+      {
+        "title": "CALIDAD",
+        "text": "Trabajamos únicamente con equipos que cumplen altos estándares de desempeño y seguridad."
+      },
+      {
+        "title": "CONFIANZA",
+        "text": "Construimos relaciones sólidas basadas en transparencia y resultados."
+      }
+    ]
+  }
+}

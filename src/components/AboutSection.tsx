@@ -1,8 +1,13 @@
 'use client'
 
 import Link from 'next/link'
+import { useTranslation } from 'react-i18next'
+import '@/i18n/i18n'
 
 export default function AboutSection() {
+
+  const { t } = useTranslation('about')
+
   return (
     <section
       id="nosotros"
@@ -16,8 +21,6 @@ export default function AboutSection() {
         }}
       />
 
-    
-
       {/* Content */}
       <div className="relative z-10 flex items-center min-h-[80vh] py-24">
         <div className="w-full px-6 md:px-16 lg:px-24">
@@ -25,35 +28,32 @@ export default function AboutSection() {
 
             {/* Subtitle */}
             <span className="subtitle">
-              Sobre Nosotros
+              {t('subtitle')}
             </span>
 
-            {/* Title (mismo tamaño original) */}
+            {/* Title */}
             <h2 className="title-secondary font-black">
-              EXPERIENCIA Y CONFIANZA EN{' '}
+              {t('title1')}{' '}
               <span className="block sm:inline">
-                MAQUINARIA INDUSTRIAL
+                {t('title2')}
               </span>
             </h2>
 
             {/* Description */}
             <p className="text-base font-normal text-black/50 max-w-xl">
-              En Krauss Machinery nos especializamos en la comercialización de
-              maquinaria industrial y de construcción, ofreciendo soluciones
-              confiables, asesoría técnica y equipos de alto desempeño para
-              empresas de distintos sectores.
+              {t('description')}
             </p>
 
-            {/* Botón original */}
+            {/* Button */}
             <div className="pt-4">
-               <Link
+              <Link
                 href="/nosotros"
                 className="w-fit bg-[var(--km-red)] text-white
                            px-6 py-3 font-semibold
                            transition-all duration-300
                            hover:opacity-90"
               >
-                Conoce más
+                {t('button')}
               </Link>
             </div>
 

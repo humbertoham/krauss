@@ -1,0 +1,17 @@
+{
+  "breadcrumb": {
+    "products": "Productos"
+  },
+  "labels": {
+    "model": "Modelo",
+    "capacity": "Capacidad",
+    "wheels": "Ruedas"
+  },
+  "specs": {
+    "title": "Especificaciones Técnicas"
+  },
+  "cta": {
+    "quote": "Solicitar Cotización",
+    "back": "Volver a {{category}}"
+  }
+}

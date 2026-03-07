@@ -1,0 +1,32 @@
+{
+  "hero": {
+    "subtitle": "About Us",
+    "title_line1": "Experience, Trust and",
+    "title_line2": "High-Performance Machinery",
+    "description": "At Krauss Machinery we work with a clear focus: providing reliable solutions in industrial and construction machinery that boost our clients' productivity."
+  },
+  "about_section": {
+    "title": "WHO WE ARE",
+    "paragraph1": "We are a company specialized in the commercialization of industrial and construction machinery, focused on providing high-quality equipment, technical advice, and solutions tailored to the operational needs of each client.",
+    "paragraph2": "Our commitment is to support our clients from equipment selection to operation, ensuring reliability, technical support, and a long-term business relationship.",
+    "button_contact": "Contact Us"
+  },
+  "values": {
+    "subtitle": "Our Values",
+    "title": "WHAT DEFINES US",
+    "items": [
+      {
+        "title": "COMMITMENT",
+        "text": "We support our clients at every stage of the process with personalized attention."
+      },
+      {
+        "title": "QUALITY",
+        "text": "We work only with equipment that meets high standards of performance and safety."
+      },
+      {
+        "title": "TRUST",
+        "text": "We build strong relationships based on transparency and results."
+      }
+    ]
+  }
+}

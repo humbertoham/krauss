@@ -1,0 +1,31 @@
+{
+  "subtitle": "KRAUSS MACHINERY",
+  "title": "WHY CHOOSE US?",
+  "description": "We provide reliable, efficient, and customized industrial solutions supported by technical expertise and a strong commitment to quality.",
+  "features": [
+    {
+      "title": "CERTIFIED QUALITY",
+      "description": "Our equipment meets international manufacturing and export standards, ensuring safety and reliability."
+    },
+    {
+      "title": "COMPETITIVE FACTORY PRICING",
+      "description": "Direct production capacity allows us to offer industrial solutions at optimized costs."
+    },
+    {
+      "title": "SPECIALIZED CONSULTING",
+      "description": "Our technical team analyzes your operational needs to recommend the ideal equipment."
+    },
+    {
+      "title": "CUSTOM CONFIGURATION",
+      "description": "We adapt capacities, heights, and accessories to meet the specific requirements of each client."
+    },
+    {
+      "title": "AFTER-SALES SUPPORT",
+      "description": "Continuous support to ensure equipment performance and long-term reliability."
+    },
+    {
+      "title": "FOCUS ON OPERATIONAL EFFICIENCY",
+      "description": "Solutions designed to reduce downtime, optimize resources, and maximize productivity."
+    }
+  ]
+}

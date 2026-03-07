@@ -1,8 +1,11 @@
 'use client'
 
 import Link from 'next/link'
+import { useTranslation } from 'react-i18next'
 
 export default function Hero() {
+  const { t } = useTranslation('hero')
+
   return (
     <section className="relative min-h-screen w-full overflow-hidden">
       
@@ -14,7 +17,6 @@ export default function Hero() {
         }}
       />
 
-
       {/* Content */}
       <div className="relative z-10 flex items-center min-h-screen pt-24">
         
@@ -25,25 +27,23 @@ export default function Hero() {
 
             {/* Subtitle */}
             <p className="uppercase tracking-[0.2em] text-sm md:text-base text-[var(--km-red)] font-semibold">
-              Maquinaria Industrial y de Construcción
+              {t('subtitle')}
             </p>
 
             {/* Title */}
             <h1
-              className="text-white font-extrabold leading-tight en
+              className="text-white font-extrabold leading-tight
                          text-4xl sm:text-5xl md:text-6xl lg:text-7xl"
             >
-              Soluciones Confiables en{' '}
+              {t('title_line1')}{' '}
               <span className="block sm:inline">
-                Maquinaria Pesada
+                {t('title_line2')}
               </span>
             </h1>
 
             {/* Description */}
             <p className="text-white/90 text-base sm:text-lg max-w-xl">
-              Equipos de alto rendimiento para optimizar tus operaciones.
-              Montacargas, plataformas elevadoras y maquinaria industrial diseñada
-              para los retos más exigentes.
+              {t('description')}
             </p>
 
             {/* Buttons */}
@@ -56,7 +56,7 @@ export default function Hero() {
                            transition-all duration-300
                            hover:opacity-90"
               >
-                Ver Productos
+                {t('button_products')}
               </Link>
 
               <Link
@@ -66,7 +66,7 @@ export default function Hero() {
                            transition-all duration-300
                            hover:bg-white hover:text-[var(--km-black)]"
               >
-                Solicitar Cotización
+                {t('button_quote')}
               </Link>
 
             </div>

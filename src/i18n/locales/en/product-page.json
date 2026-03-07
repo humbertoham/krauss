@@ -1,0 +1,17 @@
+{
+  "breadcrumb": {
+    "products": "Products"
+  },
+  "labels": {
+    "model": "Model",
+    "capacity": "Capacity",
+    "wheels": "Wheels"
+  },
+  "specs": {
+    "title": "Technical Specifications"
+  },
+  "cta": {
+    "quote": "Request Quote",
+    "back": "Back to {{category}}"
+  }
+}

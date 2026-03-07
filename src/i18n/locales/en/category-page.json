@@ -1,0 +1,14 @@
+{
+  "hero": {
+    "subtitle": "Category"
+  },
+  "products": {
+    "title": "AVAILABLE EQUIPMENT",
+    "description": "Below are the machines available within the {{category}} category. For detailed information and specific configurations, contact us."
+  },
+  "cta": {
+    "title": "NEED SPECIALIZED ADVICE?",
+    "description": "Our team can help you select the ideal equipment within the {{category}} category according to your operational needs and budget.",
+    "button": "REQUEST QUOTE"
+  }
+}

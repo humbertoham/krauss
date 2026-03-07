@@ -1,0 +1,67 @@
+{
+  "related": {
+    "title": "PRODUCTOS SIMILARES",
+    "description": "Otros equipos disponibles dentro de la categoría {{category}}.",
+    "capacity": "Capacidad",
+    "viewProduct": "Ver producto",
+    "viewMore": "Ver más de {{category}}"
+  },
+  "catalog": {
+    "subtitle": "Nuestro Catálogo",
+    "title": "MAQUINARIA PARA CADA NECESIDAD",
+    "description": "Contamos con una amplia gama de equipos industriales y de construcción diseñados para maximizar eficiencia, seguridad y rendimiento en cada operación.",
+    "viewCategory": "Ver categoría",
+    "viewAll": "Ver todos los productos"
+  },
+   "configuration": {
+    "subtitle": "Personalización",
+    "title": "Configuración",
+    "description": "Explore las diferentes opciones disponibles para adaptar el equipo a sus necesidades operativas."
+  },
+  "comparison": {
+    "title": "COMPARAR ESPECIFICACIONES",
+    "description": "Comparando {{current}} con {{comparison}}.",
+    "specification": "Especificación",
+    "capacity": "Capacidad (kg)",
+    "wheels": "Ruedas"
+  },
+  "categoryGrid": {
+    "search": "Buscar por modelo o nombre...",
+    "minCapacity": "Capacidad mínima (kg)",
+    "maxCapacity": "Capacidad máxima (kg)",
+    "wheelsAll": "Ruedas (todas)",
+    "threeWheels": "3 ruedas",
+    "fourWheels": "4 ruedas",
+    "results": "{{count}} resultados encontrados",
+    "capacity": "Capacidad",
+    "viewProduct": "Ver producto"
+  },
+  "advantages": {
+    "subtitle": "¿POR QUÉ ELEGIR KRAUSS?",
+    "title": "VENTAJAS DE {{article}} {{category}}",
+    "description": "Equipos diseñados para ofrecer rendimiento, seguridad y eficiencia en cada operación industrial.",
+    "articleMasculine": "nuestro",
+    "articleFeminine": "nuestra"
+  },
+  "functions": {
+    "subtitle": "Funcionalidad Operativa",
+    "title": "Funciones {{article}} {{category}}",
+    "description": "Diseñadas para maximizar eficiencia, seguridad y rendimiento en cada operación industrial.",
+    "articleMasculine": "del",
+    "articleFeminine": "de la"
+  },
+  "quoteForm": {
+    "title": "SOLICITAR COTIZACIÓN",
+    "description": "Completa el formulario y recibirás atención personalizada para el equipo {{product}}.",
+    "category": "Categoría",
+    "product": "Producto",
+    "model": "Modelo",
+    "name": "Nombre completo",
+    "company": "Empresa (opcional)",
+    "phone": "Teléfono de contacto",
+    "message": "Mensaje adicional (opcional)",
+    "button": "Enviar Cotización por WhatsApp",
+    "whatsappIntro": "Hola, me gustaría solicitar una cotización.",
+    "additionalMessage": "Mensaje adicional"
+  }
+}

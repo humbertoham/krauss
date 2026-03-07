@@ -1,31 +1,20 @@
 'use client'
 
+import { useTranslation } from 'react-i18next'
 import { FiTruck, FiUsers, FiTool, FiGlobe } from 'react-icons/fi'
 
-const stats = [
-  {
-    icon: FiTruck,
-    value: '500+',
-    label: 'Equipos Entregados',
-  },
-  {
-    icon: FiUsers,
-    value: '300+',
-    label: 'Clientes Satisfechos',
-  },
-  {
-    icon: FiTool,
-    value: '10+',
-    label: 'Años de Experiencia',
-  },
-  {
-    icon: FiGlobe,
-    value: 'Cobertura',
-    label: 'Nacional',
-  },
-]
+type StatItem = {
+  value: string
+  label: string
+}
 
 export default function StatsSection() {
+  const { t } = useTranslation('stats')
+
+  const stats = t('items', { returnObjects: true }) as StatItem[]
+
+  const icons = [FiTruck, FiUsers, FiTool, FiGlobe]
+
   return (
     <section className="py-24 bg-[var(--km-black)]">
       
@@ -33,12 +22,12 @@ export default function StatsSection() {
         
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-14 text-center">
           
-          {stats.map((stat) => {
-            const Icon = stat.icon
+          {stats.map((stat, index) => {
+            const Icon = icons[index]
 
             return (
               <div
-                key={stat.label}
+                key={index}
                 className="flex flex-col items-center gap-5"
               >
                 {/* Icon */}

@@ -1,0 +1,14 @@
+{
+  "hero": {
+    "subtitle": "Categoría"
+  },
+  "products": {
+    "title": "EQUIPOS DISPONIBLES",
+    "description": "A continuación se muestran los equipos disponibles dentro de la categoría {{category}}. Para información detallada y configuraciones específicas, contáctanos."
+  },
+  "cta": {
+    "title": "¿NECESITAS ASESORÍA ESPECIALIZADA?",
+    "description": "Nuestro equipo puede ayudarte a seleccionar el equipo ideal dentro de la categoría {{category}}, según tus necesidades operativas y presupuesto.",
+    "button": "SOLICITAR COTIZACIÓN"
+  }
+}

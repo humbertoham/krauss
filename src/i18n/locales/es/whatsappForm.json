@@ -1,0 +1,19 @@
+{
+  "subtitle": "Contáctanos",
+  "title": "SOLICITA INFORMACIÓN",
+  "description": "Completa el formulario y nuestro equipo se pondrá en contacto contigo vía WhatsApp.",
+  "fields": {
+    "name": "Nombre completo *",
+    "company": "Empresa (opcional)",
+    "phone": "Teléfono de contacto *",
+    "message": "Mensaje adicional (opcional)"
+  },
+  "button": "Enviar por WhatsApp",
+  "errors": {
+    "required": "Por favor completa tu nombre y teléfono."
+  },
+  "whatsapp": {
+    "template": "Hola, me gustaría recibir información.\n\n{{contextLine}}\nNombre: {{name}}\nEmpresa: {{company}}\nTeléfono: {{phone}}\n\nMensaje:\n{{message}}",
+    "context": "Interés: {{context}}"
+  }
+}

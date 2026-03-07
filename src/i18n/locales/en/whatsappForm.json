@@ -1,0 +1,19 @@
+{
+  "subtitle": "Contact Us",
+  "title": "REQUEST INFORMATION",
+  "description": "Fill out the form and our team will contact you via WhatsApp.",
+  "fields": {
+    "name": "Full name *",
+    "company": "Company (optional)",
+    "phone": "Contact phone *",
+    "message": "Additional message (optional)"
+  },
+  "button": "Send via WhatsApp",
+  "errors": {
+    "required": "Please complete your name and phone number."
+  },
+  "whatsapp": {
+    "template": "Hello, I would like to receive more information.\n\n{{contextLine}}\nName: {{name}}\nCompany: {{company}}\nPhone: {{phone}}\n\nMessage:\n{{message}}",
+    "context": "Interest: {{context}}"
+  }
+}

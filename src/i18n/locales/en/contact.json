@@ -1,0 +1,24 @@
+{
+  "hero": {
+    "subtitle": "CONTACT US",
+    "title_line1": "REQUEST INFORMATION OR",
+    "title_line2": "GET A QUOTE FOR YOUR EQUIPMENT",
+    "description": "Our team is ready to assist you and help you find the ideal machinery for your operation."
+  },
+  "form": {
+    "title": "Send Us a Message",
+    "name_placeholder": "Full name",
+    "company_placeholder": "Company (optional)",
+    "product_placeholder": "Product or equipment of interest",
+    "message_placeholder": "Message",
+    "button_whatsapp": "Send via WhatsApp"
+  },
+  "info": {
+    "title": "Contact Information",
+    "country": "Mexico",
+    "note": "📌 After submitting the form, you will be redirected to WhatsApp to continue the conversation directly with our sales team."
+  },
+  "whatsapp": {
+    "message_template": "Hello, my name is {{name}}. Company: {{company}}. Product of interest: {{product}}. Message: {{message}}"
+  }
+}

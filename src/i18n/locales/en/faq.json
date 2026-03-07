@@ -1,0 +1,31 @@
+{
+  "subtitle": "Frequently Asked Questions",
+  "title": "WE ANSWER YOUR QUESTIONS",
+  "description": "Here we answer the most common questions about our equipment, purchasing process, and technical support.",
+  "items": [
+    {
+      "question": "What type of machinery do you offer?",
+      "answer": "We offer industrial and construction machinery such as forklifts, scissor lifts, mini excavators, compact loaders, and specialized equipment for different industries."
+    },
+    {
+      "question": "Do you sell or also rent equipment?",
+      "answer": "We primarily focus on the sale of machinery; however, we can advise you on options depending on your operational needs and availability."
+    },
+    {
+      "question": "How can I request a quote?",
+      "answer": "You can request a quote directly from our website in the contact section, or get in touch with our team by phone or email."
+    },
+    {
+      "question": "Do your machines come with a warranty?",
+      "answer": "Yes. All our equipment includes a warranty according to the manufacturer’s specifications and specialized technical support."
+    },
+    {
+      "question": "Do you ship throughout the country?",
+      "answer": "Yes, we ship throughout Mexico. Delivery times and costs depend on the type of equipment and the destination."
+    },
+    {
+      "question": "Do you offer spare parts and technical service?",
+      "answer": "We provide technical support and assistance for spare parts, maintenance, and operation of the equipment we distribute."
+    }
+  ]
+}

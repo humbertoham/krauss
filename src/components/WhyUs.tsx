@@ -1,68 +1,39 @@
 'use client'
 
+import { useTranslation } from 'react-i18next'
+
 type Feature = {
   title: string
   description: string
 }
 
-const features: Feature[] = [
-  {
-    title: 'CALIDAD CERTIFICADA',
-    description:
-      'Nuestros equipos cumplen con estándares internacionales de fabricación y exportación, garantizando seguridad y confiabilidad.',
-  },
-  {
-    title: 'PRECIOS COMPETITIVOS DE FÁBRICA',
-    description:
-      'Capacidad de producción directa que nos permite ofrecer soluciones industriales a costos optimizados.',
-  },
-  {
-    title: 'ASESORÍA ESPECIALIZADA',
-    description:
-      'Nuestro equipo técnico analiza sus necesidades operativas para recomendar el equipo ideal.',
-  },
-  {
-    title: 'CONFIGURACIÓN PERSONALIZADA',
-    description:
-      'Adaptamos capacidades, alturas y accesorios para cumplir con los requerimientos específicos de cada cliente.',
-  },
-  {
-    title: 'SOPORTE POSTVENTA',
-    description:
-      'Acompañamiento continuo para garantizar el rendimiento y la vida útil del equipo.',
-  },
-  {
-    title: 'ENFOQUE EN EFICIENCIA OPERATIVA',
-    description:
-      'Soluciones diseñadas para reducir tiempos, optimizar recursos y maximizar productividad.',
-  },
-]
-
 export default function WhyUs() {
+  const { t } = useTranslation('whyUs')
+
+  const features = t('features', { returnObjects: true }) as Feature[]
+
   return (
     <section className="py-36 bg-[var(--km-black)] text-white">
       
       {/* Contenedor más ancho */}
       <div className="max-w-[1400px] mx-auto px-6">
 
-        {/* Header más alineado a la izquierda */}
+        {/* Header */}
         <div className="mb-24">
           <span className="subtitle text-[var(--km-red)] tracking-widest text-sm">
-            KRAUSS MACHINERY
+            {t('subtitle')}
           </span>
 
           <h2 className="mt-6 text-3xl md:text-4xl font-black uppercase tracking-wide">
-            ¿POR QUÉ ELEGIRNOS?
+            {t('title')}
           </h2>
 
           <p className="text-white/80 mt-6 text-lg leading-relaxed max-w-4xl">
-            Ofrecemos soluciones industriales confiables, eficientes y
-            personalizadas, respaldadas por experiencia técnica y
-            compromiso con la calidad.
+            {t('description')}
           </p>
         </div>
 
-        {/* Grid real de 3 columnas */}
+        {/* Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {features.map((item, index) => (
             <div

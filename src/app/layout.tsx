@@ -6,6 +6,8 @@ import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 import WhatsAppButton from '@/components/WhatsAppButton'
 
+import '@/i18n/i18n'
+
 const geistSans = Geist({
   variable: '--font-geist-sans',
   subsets: ['latin'],

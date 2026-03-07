@@ -1,7 +1,9 @@
 'use client'
 
 import { useMemo, useState } from 'react'
-import { Product, ProductCategory } from '@/data/products'
+import { useTranslation } from 'react-i18next'
+
+import type { Product, ProductCategory } from '@/data/product-types'
 
 type ProductComparisonProps = {
   category: ProductCategory
@@ -12,7 +14,9 @@ export default function ProductComparison({
   category,
   currentProduct,
 }: ProductComparisonProps) {
-  // 🔥 Producto por default (el primero distinto al actual)
+
+  const { t } = useTranslation('products')
+
   const defaultComparison = category.products.find(
     (p) => p.slug !== currentProduct.slug
   )
@@ -39,19 +43,26 @@ export default function ProductComparison({
   return (
     <section className="py-24 bg-[var(--km-white)] border-t border-black/10">
       <div className="container-km">
+
+        {/* HEADER */}
         <div className="mb-12">
+
           <h2 className="title-secondary font-black text-normal">
-            COMPARAR ESPECIFICACIONES
+            {t('comparison.title')}
           </h2>
 
           <p className="text-body mt-4">
-            Comparando <strong>{currentProduct.model}</strong> con{' '}
-            <strong>{comparisonProduct.model}</strong>.
+            {t('comparison.description', {
+              current: currentProduct.model,
+              comparison: comparisonProduct.model,
+            })}
           </p>
+
         </div>
 
         {/* SELECTOR */}
         <div className="mb-10 max-w-sm">
+
           <select
             value={selectedSlug}
             onChange={(e) => setSelectedSlug(e.target.value)}
@@ -65,55 +76,75 @@ export default function ProductComparison({
                 </option>
               ))}
           </select>
+
         </div>
 
         {/* TABLA */}
         <div className="overflow-x-auto border border-black/10">
+
           <table className="w-full text-sm">
+
             <thead className="bg-[var(--km-black)] text-white">
               <tr>
-                <th className="text-left px-6 py-4">Especificación</th>
+
+                <th className="text-left px-6 py-4">
+                  {t('comparison.specification')}
+                </th>
+
                 <th className="text-left px-6 py-4">
                   {currentProduct.model}
                 </th>
+
                 <th className="text-left px-6 py-4">
                   {comparisonProduct.model}
                 </th>
+
               </tr>
             </thead>
 
             <tbody>
-              {/* Capacidad */}
+
+              {/* CAPACIDAD */}
               <tr className="border-t border-black/10">
+
                 <td className="px-6 py-4 font-semibold">
-                  Capacidad (kg)
+                  {t('comparison.capacity')}
                 </td>
+
                 <td className="px-6 py-4">
                   {currentProduct.capacityKg.toLocaleString()}
                 </td>
+
                 <td className="px-6 py-4">
                   {comparisonProduct.capacityKg.toLocaleString()}
                 </td>
+
               </tr>
 
-              {/* Ruedas */}
+              {/* RUEDAS */}
               <tr className="border-t border-black/10 bg-gray-50">
+
                 <td className="px-6 py-4 font-semibold">
-                  Ruedas
+                  {t('comparison.wheels')}
                 </td>
+
                 <td className="px-6 py-4">
                   {currentProduct.wheels}
                 </td>
+
                 <td className="px-6 py-4">
                   {comparisonProduct.wheels}
                 </td>
+
               </tr>
 
-              {/* Specs dinámicos */}
+              {/* SPECS DINÁMICOS */}
               {allSpecLabels.map((label, index) => {
+
                 const spec1 = currentProduct.specs.find(
                   (s) => s.label === label
                 )
+
                 const spec2 = comparisonProduct.specs.find(
                   (s) => s.label === label
                 )
@@ -125,21 +156,29 @@ export default function ProductComparison({
                       index % 2 === 0 ? '' : 'bg-gray-50'
                     }`}
                   >
+
                     <td className="px-6 py-4 font-semibold">
                       {label}
                     </td>
+
                     <td className="px-6 py-4">
                       {spec1?.value ?? '—'}
                     </td>
+
                     <td className="px-6 py-4">
                       {spec2?.value ?? '—'}
                     </td>
+
                   </tr>
                 )
               })}
+
             </tbody>
+
           </table>
+
         </div>
+
       </div>
     </section>
   )
