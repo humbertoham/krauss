@@ -49,7 +49,7 @@ export default function AboutPage() {
             "
           >
             {t('hero.title_line1')}
-            <br className="hidden md:block" />
+            <br className="block" />
             {t('hero.title_line2')}
           </h1>
 
