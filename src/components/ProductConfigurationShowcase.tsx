@@ -75,7 +75,7 @@ export default function ProductConfigurationShowcase({ product }: Props) {
               src={product.heroImage}
               alt={product.name}
               fill
-              className="object-cover"
+              className="object-contain lg:object-cover"
             />
 
           </div>
@@ -88,7 +88,7 @@ export default function ProductConfigurationShowcase({ product }: Props) {
               src={activeConfig.image}
               alt={activeConfig.title}
               fill
-              className="object-cover transition-opacity duration-300"
+             className="object-contain lg:object-cover transition-opacity duration-300"
             />
 
           </div>
