@@ -174,7 +174,7 @@ configurations: [
     shortDescription: 'Modelo compacto de 3 ruedas para espacios reducidos.',
     description:
       'Montacargas eléctrico de 1.6 toneladas con radio de giro reducido y sistema hidráulico de potencia.',
-    images: Array.from({ length: 9 }, (_, i) => `/products/ht-1-6t/${i + 1}.png`),
+    images: Array.from({ length: 3 }, (_, i) => `/products/ht-1-6t/${i + 1}.png`),
     specs: [
       { label: 'Capacidad nominal', value: '1600 kg' },
       { label: 'Altura de elevación', value: '3000 mm (personalizable)' },
@@ -188,7 +188,32 @@ configurations: [
       { label: 'Rueda delantera', value: '18x7-10' },
       { label: 'Rueda trasera', value: '15x4.5-8' },
       { label: 'Color', value: 'Personalizable' },
-    ],
+    ],     
+    heroImage: '/products/ht-1-6t/hero.png',
+
+configurations: [
+  {
+    title: 'Tenedor de carga',
+    image: '/products/ht-1-6t/8.png',
+  },
+  {
+    title: 'Cansar',
+    image: '/products/ht-1-6t/4.png',
+  },
+  {
+    title: 'Longmen',
+    image: '/products/ht-1-6t/6.png',
+  },
+   {
+    title: 'Cilindro hidráulico',
+    image: '/products/ht-1-6t/5.png',
+  },
+   {
+    title: 'Tablero de instrumentos',
+    image: '/products/ht-1-6t/7.png',
+  },
+   ],
+
   },
   {
   slug: 'ht-2-0t',
@@ -201,7 +226,7 @@ configurations: [
     'Montacargas eléctrico de 2 toneladas con estructura reforzada.',
   description:
     'Autoelevador eléctrico de 2 toneladas con marco en H de acero reforzado y motor de alta potencia para aplicaciones industriales.',
-  images: Array.from({ length: 9 }, (_, i) => `/products/ht-2-0t/${i + 1}.png`),
+  images: Array.from({ length: 3 }, (_, i) => `/products/ht-2-0t/${i + 1}.png`),
   specs: [
     { label: 'Capacidad nominal', value: '2000 kg' },
     { label: 'Peso del equipo', value: '2900 kg' },
@@ -216,6 +241,30 @@ configurations: [
     { label: 'Rueda trasera', value: '500-8' },
     { label: 'Color', value: 'Personalizable' },
   ],
+      heroImage: '/products/ht-2-0t/hero.png',
+
+configurations: [
+  {
+    title: 'Consola de operación',
+    image: '/products/ht-2-0t/4.png',
+  },
+  {
+    title: 'Tenedor engrosado',
+    image: '/products/ht-2-0t/5.png',
+  },
+  {
+    title: 'Neumáticos sólidos',
+    image: '/products/ht-2-0t/7.png',
+  },
+   {
+    title: 'Asiento cómodo',
+    image: '/products/ht-2-0t/6.png',
+  },
+   {
+    title: 'Cilindro hidráulico',
+    image: '/products/ht-2-0t/8.png',
+  },
+   ],
 },
 
   {
@@ -228,7 +277,7 @@ configurations: [
     shortDescription: 'Equipo robusto con marco reforzado en C.',
     description:
       'Carretilla eléctrica de 2 toneladas con motor de alta potencia y estructura de acero reforzada.',
-    images: Array.from({ length: 9 }, (_, i) => `/products/ht-2-0t-b/${i + 1}.png`),
+    images: Array.from({ length: 2 }, (_, i) => `/products/ht-2-0t-b/${i + 1}.png`),
     specs: [
       { label: 'Capacidad nominal', value: '2000 kg' },
       { label: 'Peso del equipo', value: '2600 kg' },
@@ -241,6 +290,30 @@ configurations: [
       { label: 'Rueda trasera', value: '500-8' },
       { label: 'Color', value: 'Personalizable' },
     ],
+    heroImage: '/products/ht-2-0t-b/hero.png',
+
+configurations: [
+  {
+    title: 'Consola de operación',
+    image: '/products/ht-2-0t-b/3.png',
+  },
+  {
+    title: 'Tenedor engrosado',
+    image: '/products/ht-2-0t-b/6.png',
+  },
+  {
+    title: 'Neumáticos sólidos',
+    image: '/products/ht-2-0t-b/5.png',
+  },
+   {
+    title: 'Asiento cómodo',
+    image: '/products/ht-2-0t-b/7.png',
+  },
+   {
+    title: 'Cilindro hidráulico',
+    image: '/products/ht-2-0t-b/4.png',
+  },
+   ],
   },
 
   {
@@ -253,7 +326,7 @@ configurations: [
     shortDescription: 'Modelo industrial de alto rendimiento.',
     description:
       'Carretilla eléctrica de 2.5 toneladas con motor de elevación de 5kW y estructura reforzada.',
-    images: Array.from({ length: 9 }, (_, i) => `/products/ht-2-5t-b/${i + 1}.png`),
+    images: Array.from({ length: 2 }, (_, i) => `/products/ht-2-5t-b/${i + 1}.png`),
     specs: [
       { label: 'Capacidad nominal', value: '2500 kg' },
       { label: 'Altura de elevación', value: '3000 mm (personalizable)' },
@@ -267,6 +340,34 @@ configurations: [
       { label: 'Rueda trasera', value: '18x7-8' },
       { label: 'Color', value: 'Personalizable' },
     ],
+    heroImage: '/products/ht-2-5t-b/hero.png',
+
+configurations: [
+  {
+    title: 'Tablero de instrumentos LED',
+    image: '/products/ht-2-5t-b/8.png',
+  },
+  {
+    title: 'Horquilla engrosada',
+    image: '/products/ht-2-5t-b/5.png',
+  },
+  {
+    title: 'Cadena engrosada',
+    image: '/products/ht-2-5t-b/4.png',
+  },
+   {
+    title: 'Asientos cómodos',
+    image: '/products/ht-2-5t-b/3.png',
+  },
+   {
+    title: 'Mesa de operaciones',
+    image: '/products/ht-2-5t-b/6.png',
+  },
+  {
+    title: 'Neumáticos sólidos',
+    image: '/products/ht-2-5t-b/7.png',
+  },
+   ],
   },
 {
   slug: 'ht-3-0t-h',
@@ -279,7 +380,7 @@ configurations: [
     'Carretilla eléctrica de 3 toneladas con estructura reforzada.',
   description:
     'Montacargas eléctrico de 3 toneladas diseñado para operaciones industriales exigentes con opción de personalización.',
-  images: Array.from({ length: 9 }, (_, i) => `/products/ht-3-0t-h/${i + 1}.png`),
+  images: Array.from({ length: 2 }, (_, i) => `/products/ht-3-0t-h/${i + 1}.png`),
   specs: [
     { label: 'Capacidad nominal', value: '3000 kg' },
     { label: 'Altura de elevación', value: '3000 mm (personalizable)' },
@@ -292,6 +393,30 @@ configurations: [
     { label: 'Rueda trasera', value: '500-8' },
     { label: 'Color', value: 'Personalizable' },
   ],
+  heroImage: '/products/ht-3-0t-h/hero.png',
+
+configurations: [
+  {
+    title: 'Techo de protección de seguridad',
+    image: '/products/ht-3-0t-h/6.png',
+  },
+  {
+    title: 'Mástil de visión amplia',
+    image: '/products/ht-3-0t-h/3.png',
+  },
+   {
+    title: 'Horquilla engrosada',
+    image: '/products/ht-3-0t-h/4.png',
+  },
+   {
+    title: 'Cilindro hidráulico',
+    image: '/products/ht-3-0t-h/8.png',
+  },
+   {
+    title: 'Neumáticos sólidos',
+    image: '/products/ht-3-0t-h/5.png',
+  },
+   ],
 },
 
   {
@@ -304,7 +429,7 @@ configurations: [
     shortDescription: 'Solución eléctrica para cargas pesadas.',
     description:
       'Montacargas eléctrico de 3.5 toneladas con distancia entre ejes ampliada y dirección hidráulica.',
-    images: Array.from({ length: 10 }, (_, i) => `/products/ht-3-5t/${i + 1}.png`),
+    images: Array.from({ length: 3 }, (_, i) => `/products/ht-3-5t/${i + 1}.png`),
     specs: [
       { label: 'Capacidad nominal', value: '3500 kg' },
       { label: 'Altura de elevación', value: '3000 mm (personalizable)' },
@@ -316,6 +441,30 @@ configurations: [
       { label: 'Rueda trasera', value: '650-10' },
       { label: 'Color', value: 'Personalizable' },
     ],
+    heroImage: '/products/ht-3-5t/hero.png',
+
+configurations: [
+  {
+    title: 'Horquilla engrosada',
+    image: '/products/ht-3-5t/4.png',
+  },
+  {
+    title: 'Cadena engrosada',
+    image: '/products/ht-3-5t/7.png',
+  },
+  {
+    title: 'Asientos cómodos',
+    image: '/products/ht-3-5t/8.png',
+  },
+   {
+    title: 'Mesa de operaciones',
+    image: '/products/ht-3-5t/5.png',
+  },
+   {
+    title: 'Neumáticos sólidos',
+    image: '/products/ht-3-5t/6.png',
+  },
+   ],
   },
 
   {
@@ -328,7 +477,7 @@ configurations: [
     shortDescription: 'Equipo eléctrico de alto desempeño.',
     description:
       'Autoelevador eléctrico de 4 toneladas con amplio radio de giro y estructura reforzada.',
-    images: Array.from({ length: 6 }, (_, i) => `/products/ht-4-0t/${i + 1}.png`),
+    images: Array.from({ length: 2 }, (_, i) => `/products/ht-4-0t/${i + 1}.png`),
     specs: [
       { label: 'Capacidad nominal', value: '4000 kg' },
       { label: 'Altura de elevación', value: '3000 mm (personalizable)' },
@@ -340,6 +489,23 @@ configurations: [
       { label: 'Rueda trasera', value: '650-10' },
       { label: 'Color', value: 'Personalizable' },
     ],
+    heroImage: '/products/ht-4-0t/hero.png',
+
+configurations: [
+  {
+    title: 'Desplazamiento lateral',
+    image: '/products/ht-4-0t/4.png',
+  },
+  {
+    title: 'Mesa de operaciones',
+    image: '/products/ht-4-0t/3.png',
+  },
+  {
+    title: 'Neumáticos sólidos',
+    image: '/products/ht-3-5t/6.png',
+  },
+ 
+   ],
   },
 
   {
@@ -352,7 +518,7 @@ configurations: [
     shortDescription: 'Montacargas eléctrico de alta capacidad.',
     description:
       'Carretilla eléctrica de 5 toneladas con motor AC de alta potencia y estructura robusta.',
-    images: Array.from({ length: 9 }, (_, i) => `/products/ht-5-0t/${i + 1}.png`),
+    images: Array.from({ length: 2 }, (_, i) => `/products/ht-5-0t/${i + 1}.png`),
     specs: [
       { label: 'Capacidad nominal', value: '5000 kg' },
       { label: 'Motor de elevación', value: 'AC 25.5 kW' },
@@ -364,6 +530,34 @@ configurations: [
       { label: 'Rueda trasera', value: '700-12' },
       { label: 'Color', value: 'Personalizable' },
     ],
+    heroImage: '/products/ht-5-0t/hero.png',
+
+configurations: [
+  {
+    title: 'Iluminación LED',
+    image: '/products/ht-5-0t/5.png',
+  },
+  {
+    title: 'Desplazamiento lateral',
+    image: '/products/ht-5-0t/6.png',
+  },
+  {
+    title: 'Horquilla engrosada',
+    image: '/products/ht-5-0t/4.png',
+  },
+  {
+    title: 'Cadena engrosada',
+    image: '/products/ht-5-0t/3.png',
+  },
+   {
+    title: 'Mesa de operaciones',
+    image: '/products/ht-5-0t/7.png',
+  },
+   {
+    title: 'Neumáticos sólidos',
+    image: '/products/ht-5-0t/8.png',
+  },
+   ],
   },
   {
   slug: 'ht-7-0t',
@@ -376,7 +570,7 @@ configurations: [
     'Montacargas eléctrico industrial de alta capacidad.',
   description:
     'Carretilla elevadora eléctrica de 7 toneladas diseñada para operaciones industriales pesadas con dirección hidráulica de potencia.',
-  images: Array.from({ length: 10 }, (_, i) => `/products/ht-7-0t/${i + 1}.png`),
+  images: Array.from({ length: 2 }, (_, i) => `/products/ht-7-0t/${i + 1}.png`),
   specs: [
     { label: 'Capacidad nominal', value: '7000 kg' },
     { label: 'Altura de elevación', value: '3000 mm (personalizable)' },
@@ -392,6 +586,34 @@ configurations: [
     { label: 'Dirección', value: 'Hidráulica asistida' },
     { label: 'Color', value: 'Personalizable' },
   ],
+  heroImage: '/products/ht-7-0t/hero.png',
+
+configurations: [
+  {
+    title: 'Tablero de instrumentos LED',
+    image: '/products/ht-7-0t/6.png',
+  },
+  {
+    title: 'Carrocería imperniable',
+    image: '/products/ht-7-0t/3.png',
+  },
+  {
+    title: 'Horquilla engrosada',
+    image: '/products/ht-7-0t/9.png',
+  },
+   {
+    title: 'Cadena engrosada',
+    image: '/products/ht-7-0t/4.png',
+  },
+   {
+    title: 'Mesa de operaciones',
+    image: '/products/ht-7-0t/8.png',
+  },
+  {
+    title: 'Neumáticos sólidos',
+    image: '/products/ht-7-0t/7.png',
+  },
+   ],
 },
 
 
@@ -405,7 +627,7 @@ configurations: [
     shortDescription: 'Solución eléctrica para cargas ultra pesadas.',
     description:
       'Autoelevador eléctrico de 10 toneladas diseñado para operaciones industriales de gran escala.',
-    images: Array.from({ length: 9 }, (_, i) => `/products/ht-10t/${i + 1}.png`),
+    images: Array.from({ length: 3 }, (_, i) => `/products/ht-10t/${i + 1}.png`),
     specs: [
       { label: 'Capacidad nominal', value: '10000 kg' },
       { label: 'Potencia motor de tracción', value: '18 kW' },
@@ -417,6 +639,30 @@ configurations: [
       { label: 'Rueda trasera', value: '900-16' },
       { label: 'Color', value: 'Personalizable' },
     ],
+    heroImage: '/products/ht-10t/hero.png',
+
+configurations: [
+  {
+    title: 'Horquilla engrosada',
+    image: '/products/ht-10t/6.png',
+  },
+  {
+    title: 'Eje pesado',
+    image: '/products/ht-10t/5.png',
+  },
+  {
+    title: 'Marco de la puerta',
+    image: '/products/ht-10t/7.png',
+  },
+   {
+    title: 'Neumáticos sólidos',
+    image: '/products/ht-10t/8.png',
+  },
+   {
+    title: 'Cilindro hidráulico',
+    image: '/products/ht-10t/4.png',
+  },
+   ],
   },
 ]
 
@@ -501,7 +747,7 @@ configurations: [
       'Apilador compacto ideal para cargas ligeras y logística interna.',
     description:
       'Apilador eléctrico autoportante con capacidades configurables entre 500 y 1500 kg. Disponible en versión automática y semiautomática.',
-    images: Array.from({ length: 9 }, (_, i) => `/products/ht-cdd5/${i + 1}.png`),
+    images: Array.from({ length: 3 }, (_, i) => `/products/ht-cdd5/${i + 1}.png`),
     specs: [
       { label: 'Capacidad nominal', value: '500–1500 kg' },
       { label: 'Altura de elevación', value: '1600–2870 mm' },
@@ -512,6 +758,30 @@ configurations: [
       { label: 'Radio de giro', value: '1147–1173 mm' },
       { label: 'Tipo de operación', value: 'Walkie' },
     ],
+    heroImage: '/products/ht-cdd5/hero.png',
+
+configurations: [
+  {
+    title: 'Mango de operación',
+    image: '/products/ht-cdd5/4.png',
+  },
+  {
+    title: 'Horquilla engrosada',
+    image: '/products/ht-cdd5/5.png',
+  },
+  {
+    title: 'Marco de la puerta',
+    image: '/products/ht-cdd5/6.png',
+  },
+   {
+    title: 'Cilindro de aceite',
+    image: '/products/ht-cdd5/7.png',
+  },
+   {
+    title: 'Neumáticos de dirección',
+    image: '/products/ht-cdd5/8.png',
+  },
+   ],
   },
 
   {
@@ -525,7 +795,7 @@ configurations: [
       'Apilador eléctrico industrial de alto alcance.',
     description:
       'Apilador eléctrico de 1.5 toneladas con altura máxima de elevación hasta 6000 mm, ideal para racks altos.',
-    images: Array.from({ length: 7 }, (_, i) => `/products/ht-cdd15/${i + 1}.png`),
+    images: Array.from({ length: 2 }, (_, i) => `/products/ht-cdd15/${i + 1}.png`),
     specs: [
       { label: 'Capacidad nominal', value: '1500 kg' },
       { label: 'Altura de elevación', value: '3000–6000 mm' },
@@ -537,6 +807,27 @@ configurations: [
       { label: 'Radio de giro', value: '1435 mm' },
       { label: 'Tipo de operación', value: 'Walkie' },
     ],
+    heroImage: '/products/ht-cdd15/hero.png',
+
+configurations: [
+  {
+    title: 'Mango de operaciones inteligente',
+    image: '/products/ht-cdd15/4.png',
+  },
+  {
+    title: 'Forging fork',
+    image: '/products/ht-cdd15/5.png',
+  },
+  {
+    title: 'Cadena de acero',
+    image: '/products/ht-cdd15/6.png',
+  },
+   {
+    title: 'Marco de la puerta',
+    image: '/products/ht-cdd15/3.png',
+  },
+   
+   ],
   },
   {
   slug: 'ht-cyd15',
@@ -549,7 +840,7 @@ configurations: [
     'Apilador todoterreno diseñado para superficies irregulares.',
   description:
     'Apilador eléctrico todoterreno con capacidad configurable entre 1500 y 3000 kg, ideal para operaciones en exteriores y terrenos irregulares.',
-  images: Array.from({ length: 7 }, (_, i) => `/products/ht-cyd15/${i + 1}.png`),
+  images: Array.from({ length: 2 }, (_, i) => `/products/ht-cyd15/${i + 1}.png`),
   specs: [
     { label: 'Capacidad nominal', value: '1500–3000 kg' },
     { label: 'Altura de elevación', value: '1600–3000 mm' },
@@ -561,6 +852,24 @@ configurations: [
     { label: 'Tipo de neumático', value: 'Poliuretano' },
     { label: 'Tipo de operación', value: 'Walkie' },
   ],
+  heroImage: '/products/ht-cyd15/hero.png',
+
+configurations: [
+  {
+    title: 'Forging fork',
+    image: '/products/ht-cyd15/3.png',
+  },
+ 
+  {
+    title: 'Chasis estable',
+    image: '/products/ht-cyd15/4.png',
+  },
+   {
+    title: 'Mango de operaciones inteligente',
+    image: '/products/ht-cyd15/5.png',
+  },
+   
+   ],
 },
 
 
@@ -575,7 +884,7 @@ configurations: [
       'Apilador retráctil eléctrico de operación de pie.',
     description:
       'Apilador eléctrico retráctil de 1.6 toneladas diseñado para almacenamiento vertical eficiente.',
-    images: Array.from({ length: 11 }, (_, i) => `/products/ht-cqd16/${i + 1}.png`),
+    images: Array.from({ length: 3 }, (_, i) => `/products/ht-cqd16/${i + 1}.png`),
     specs: [
       { label: 'Capacidad nominal', value: '1600 kg' },
       { label: 'Altura de elevación', value: '3000 mm' },
@@ -587,6 +896,38 @@ configurations: [
       { label: 'Radio de giro', value: '1710–2145 mm' },
       { label: 'Tipo de operación', value: 'Stand-up' },
     ],
+    heroImage: '/products/ht-cqd16/hero.png',
+
+configurations: [
+  {
+    title: 'Batería',
+    image: '/products/ht-cqd16/4.png',
+  },
+  {
+    title: 'Forging fork',
+    image: '/products/ht-cqd16/5.png',
+  },
+  {
+    title: 'Pedales',
+    image: '/products/ht-cqd16/6.png',
+  },
+   {
+    title: 'Mango de operaciones inteligente',
+    image: '/products/ht-cqd16/7.png',
+  },
+   {
+    title: 'Cadena de acero',
+    image: '/products/ht-cqd16/8.png',
+  },
+  {
+    title: 'Neumáticos de nylon / Pu',
+    image: '/products/ht-cqd16/9.png',
+  },
+  {
+    title: 'Mástil delantero',
+    image: '/products/ht-cqd16/10.png',
+  },
+   ],
   },
 
   {
@@ -600,7 +941,7 @@ configurations: [
       'Apilador retráctil eléctrico para uso intensivo.',
     description:
       'Apilador eléctrico retráctil de 2 toneladas con neumáticos de poliuretano y diseño para trabajo continuo.',
-    images: Array.from({ length: 11 }, (_, i) => `/products/ht-cqd20/${i + 1}.png`),
+    images: Array.from({ length: 3 }, (_, i) => `/products/ht-cqd20/${i + 1}.png`),
     specs: [
       { label: 'Capacidad nominal', value: '2000 kg' },
       { label: 'Altura de elevación', value: '3000 mm' },
@@ -613,6 +954,38 @@ configurations: [
       { label: 'Tipo de neumático', value: 'Poliuretano' },
       { label: 'Tipo de operación', value: 'Stand-up' },
     ],
+    heroImage: '/products/ht-cqd20/hero.png',
+
+configurations: [
+  {
+    title: 'Batería',
+    image: '/products/ht-cqd20/4.png',
+  },
+  {
+    title: 'Forging fork',
+    image: '/products/ht-cqd20/5.png',
+  },
+  {
+    title: 'Pedales',
+    image: '/products/ht-cqd20/6.png',
+  },
+   {
+    title: 'Mango de operaciones inteligente',
+    image: '/products/ht-cqd20/7.png',
+  },
+   {
+    title: 'Cadena de acero',
+    image: '/products/ht-cqd20/8.png',
+  },
+  {
+    title: 'Neumáticos de nylon / Pu',
+    image: '/products/ht-cqd20/9.png',
+  },
+  {
+    title: 'Mástil delantero',
+    image: '/products/ht-cqd20/10.png',
+  },
+   ],
   },
 
   {
@@ -626,7 +999,7 @@ configurations: [
       'Apilador eléctrico robusto para operaciones logísticas exigentes.',
     description:
       'Apilador eléctrico de 2 toneladas diseñado para estabilidad y eficiencia en operaciones de almacén.',
-    images: Array.from({ length: 10 }, (_, i) => `/products/ht-cdd20/${i + 1}.png`),
+    images: Array.from({ length: 2 }, (_, i) => `/products/ht-cdd20/${i + 1}.png`),
     specs: [
       { label: 'Capacidad nominal', value: '2000 kg' },
       { label: 'Altura de elevación', value: '1600–3000 mm' },
@@ -638,6 +1011,38 @@ configurations: [
       { label: 'Radio de giro', value: '1755–2200 mm' },
       { label: 'Tipo de operación', value: 'Walkie' },
     ],
+    heroImage: '/products/ht-1-6t/hero.png',
+
+configurations: [
+   {
+    title: 'Guard rail',
+    image: '/products/ht-cdd20/3.png',
+  },
+  {
+    title: 'Forging fork',
+    image: '/products/ht-cdd20/4.png',
+  },
+  {
+    title: 'Pedales',
+    image: '/products/ht-cdd20/5.png',
+  },
+   {
+    title: 'Mango de operaciones inteligente',
+    image: '/products/ht-cdd20/9.png',
+  },
+   {
+    title: 'Cadena de acero',
+    image: '/products/ht-cdd20/6.png',
+  },
+  {
+    title: 'Neumáticos de nylon / Pu',
+    image: '/products/ht-cdd20/7.png',
+  },
+  {
+    title: 'Marco de la puerta',
+    image: '/products/ht-cdd20/8.png',
+  },
+   ],
   },
 ]
 
@@ -723,7 +1128,7 @@ configurations: [
     'Plataforma de tijera móvil para trabajos en altura de 4 a 18 metros.',
   description:
     'Plataforma elevadora de tijera móvil con capacidad entre 300 y 1000 kg, adecuada para múltiples operadores y diferentes fuentes de energía.',
-  images: Array.from({ length: 9 }, (_, i) => `/products/ht-mp/${i + 1}.png`),
+  images: Array.from({ length: 3 }, (_, i) => `/products/ht-mp/${i + 1}.png`),
   specs: [
     { label: 'Capacidad nominal', value: '300–1000 kg' },
     { label: 'Altura de plataforma', value: '4–18 m' },
@@ -737,6 +1142,30 @@ configurations: [
     { label: 'Batería', value: 'Opcional' },
     { label: 'Cargador', value: 'Opcional' },
   ],
+  heroImage: '/products/ht-mp/hero.png',
+
+configurations: [
+  {
+    title: 'Plataforma de trabajo',
+    image: '/products/ht-mp/4.png',
+  },
+  {
+    title: 'Neumáticos',
+    image: '/products/ht-mp/5.png',
+  },
+  {
+    title: 'Controlador de elevación',
+    image: '/products/ht-mp/6.png',
+  },
+   {
+    title: 'Manijas',
+    image: '/products/ht-mp/7.png',
+  },
+   {
+    title: 'Patas de soporte',
+    image: '/products/ht-mp/8.png',
+  },
+   ],
 },
 {
   slug: 'ht-gtjz-tt',
@@ -749,7 +1178,7 @@ configurations: [
     'Plataforma de tijera todo terreno para construcción y exteriores.',
   description:
     'Plataforma elevadora todo terreno con capacidad entre 230 y 450 kg, equipada con sistema de descenso de emergencia y protección impermeable.',
-  images: Array.from({ length: 8 }, (_, i) => `/products/ht-gtjz-tt/${i + 1}.png`),
+  images: Array.from({ length: 2 }, (_, i) => `/products/ht-gtjz-tt/${i + 1}.png`),
   specs: [
     { label: 'Capacidad nominal', value: '230–450 kg' },
     { label: 'Altura de plataforma', value: '4.5–12 m' },
@@ -761,6 +1190,30 @@ configurations: [
     { label: 'Batería', value: '12V/100Ah ×2 – 6V/200Ah ×8' },
     { label: 'Cargador', value: '48V / 30A' },
   ],
+  heroImage: '/products/ht-gtjz-tt/hero.png',
+
+configurations: [
+  {
+    title: 'Interruptor de control',
+    image: '/products/ht-gtjz-tt/3.png',
+  },
+  {
+    title: 'Pista',
+    image: '/products/ht-gtjz-tt/4.png',
+  },
+  {
+    title: 'Escalera de plataforma',
+    image: '/products/ht-gtjz-tt/5.png',
+  },
+   {
+    title: 'Extensión de plataforma',
+    image: '/products/ht-gtjz-tt/6.png',
+  },
+   {
+    title: 'Pata de apoyo',
+    image: '/products/ht-gtjz-tt/7.png',
+  },
+   ],
 },
 {
   slug: 'ht-gtjz-ruedas',
@@ -773,7 +1226,7 @@ configurations: [
     'Plataforma de tijera compacta con sistema de extensión rápida.',
   description:
     'Plataforma elevadora eléctrica con extensión accionada por pedal, ideal para proyectos interiores y mantenimiento industrial.',
-  images: Array.from({ length: 8 }, (_, i) => `/products/ht-gtjz-ruedas/${i + 1}.png`),
+  images: Array.from({ length: 2 }, (_, i) => `/products/ht-gtjz-ruedas/${i + 1}.png`),
   specs: [
     { label: 'Capacidad nominal', value: '230–450 kg' },
     { label: 'Altura de plataforma', value: '6–12 m' },
@@ -786,6 +1239,30 @@ configurations: [
     { label: 'Batería', value: '4×6V/225Ah' },
     { label: 'Cargador', value: '24V / 25A' },
   ],
+  heroImage: '/products/ht-gtjz-ruedas/hero.png',
+
+configurations: [
+  {
+    title: 'Batería',
+    image: '/products/ht-gtjz-ruedas/5.png',
+  },
+  {
+    title: 'Neumáticos silenciosos',
+    image: '/products/ht-gtjz-ruedas/6.png',
+  },
+  {
+    title: 'Interruptor de control',
+    image: '/products/ht-gtjz-ruedas/7.png',
+  },
+   {
+    title: 'Extensión de plataforma',
+    image: '/products/ht-gtjz-ruedas/4.png',
+  },
+   {
+    title: 'Plataforma extendida',
+    image: '/products/ht-gtjz-ruedas/3.png',
+  },
+   ],
 },
 
     ],
