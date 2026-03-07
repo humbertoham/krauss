@@ -120,7 +120,7 @@ export const categories: ProductCategory[] = [
     shortDescription: 'Carretilla eléctrica compacta ideal para almacenes.',
     description:
       'Autoelevador eléctrico de 1.5 toneladas con dirección hidráulica y excelente maniobrabilidad para operaciones interiores.',
-    images: Array.from({ length: 9 }, (_, i) => `/products/ht-1-5t/${i + 1}.png`),
+    images: Array.from({ length: 2 }, (_, i) => `/products/ht-1-5t/${i + 1}.png`),
     specs: [
       { label: 'Capacidad nominal', value: '1500 kg' },
       { label: 'Altura de elevación', value: '3000 mm (personalizable)' },
@@ -138,16 +138,28 @@ export const categories: ProductCategory[] = [
 
 configurations: [
   {
-    title: 'Configuración de Mástil Triplex',
-    image: '/config/ht-3-0t/mastil.jpg',
+    title: 'Consola de operación',
+    image: '/products/ht-1-5t/4.png',
   },
   {
-    title: 'Batería de Litio Industrial',
-    image: '/config/ht-3-0t/bateria.jpg',
+    title: 'Tenedor engrosado',
+    image: '/products/ht-1-5t/3.png',
   },
   {
-    title: 'Desplazador Lateral',
-    image: '/config/ht-3-0t/desplazador.jpg',
+    title: 'Neumáticos macizos',
+    image: '/products/ht-1-5t/6.png',
+  },
+   {
+    title: 'Asiento cómodo',
+    image: '/products/ht-1-5t/5.png',
+  },
+   {
+    title: 'Cilindro hidráulico',
+    image: '/products/ht-1-5t/7.png',
+  },
+   {
+    title: 'Lámpara de iluminación',
+    image: '/products/ht-1-5t/8.png',
   },
 ],
   },
