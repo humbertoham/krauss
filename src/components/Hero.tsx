@@ -26,7 +26,7 @@ export default function Hero() {
       />
 
       {/* Content */}
-      <div className="relative z-10 flex items-center min-h-screen pt-4 md:pt-24">
+      <div className="relative z-10 flex items-center min-h-screen  md:pt-24">
 
         <div className="w-full px-5 md:px-16 lg:px-24">
 
