@@ -67,7 +67,7 @@ export default function ProductConfigurationShowcase({ product }: Props) {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
 
           {/* HERO */}
-          <div className="relative h-[500px] border border-black/10 overflow-hidden">
+          <div className="relative h-[500px] border bg-white border-black/10 overflow-hidden">
 
             <Image
               src={product.heroImage}
@@ -79,7 +79,7 @@ export default function ProductConfigurationShowcase({ product }: Props) {
           </div>
 
           {/* CONFIG IMAGE */}
-          <div className="relative h-[500px] border border-black/10 overflow-hidden">
+          <div className="relative h-[500px] border bg-white border-black/10 overflow-hidden">
 
             <Image
               key={activeConfig.image}

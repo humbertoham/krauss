@@ -57,7 +57,7 @@ export default function RelatedProducts({
               >
 
                 {/* IMAGE */}
-                <div className="relative h-56 overflow-hidden bg-gray-100">
+                <div className="relative h-56 overflow-hidden bg-white">
 
                   <Image
                     src={image}
