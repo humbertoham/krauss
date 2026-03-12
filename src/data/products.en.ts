@@ -8,6 +8,7 @@ export const categories: ProductCategory[] = [
       'Electric forklifts designed for efficient, quiet, and emission-free operations in industrial environments.',
     image: '/images/montacarga.jpg',
     imageP: '/images/montacarga.png',
+    imageM: '/images/movil/montacarga.jpg',
     functions: [
       {
         title: 'Efficient handling of heavy loads',
@@ -628,6 +629,7 @@ export const categories: ProductCategory[] = [
     'Industrial stackers ideal for load handling in confined spaces and logistics operations.',
   image: '/images/apilador.jpg',
   imageP: '/images/apilador.png',
+  imageM: '/images/movil/apilador.jpg',
   functions: [
     {
       title: 'Efficient vertical stacking',
@@ -1001,6 +1003,7 @@ export const categories: ProductCategory[] = [
     'Scissor lift platforms designed for working at height with maximum stability and safety.',
   image: '/images/tijera.jpg',
   imageP: '/images/tijera.png',
+  imageM: '/images/movil/tijera.jpg',
   functions: [
     {
       title: 'Safe work at height',

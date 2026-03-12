@@ -7,6 +7,7 @@ import Footer from '@/components/layout/Footer'
 import WhatsAppButton from '@/components/WhatsAppButton'
 
 import '@/i18n/i18n'
+import ButtonR from '@/components/buttonr'
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -103,7 +104,7 @@ export default function RootLayout({
         <Navbar />
         <main>{children}</main>
         <Footer />
-        <WhatsAppButton />
+        <ButtonR/>
       </body>
     </html>
   )

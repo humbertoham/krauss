@@ -22,15 +22,13 @@ export default function ProductConfigurationShowcase({ product }: Props) {
   const activeConfig = product.configurations[activeIndex]
 
   return (
-    <section className="py-32 bg-[var(--km-white)] border-t border-black/10">
+    <section className="pb-32 pt-8 bg-[var(--km-white)] border-t border-black/10">
       <div className="container-km">
 
         {/* HEADER */}
         <div className="mb-16 max-w-3xl">
 
-          <span className="subtitle text-[var(--km-red)]">
-            {t('configuration.subtitle')}
-          </span>
+        
 
           <h2 className="title-secondary mt-4">
             {t('configuration.title')}

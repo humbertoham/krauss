@@ -41,10 +41,20 @@ export default function CategoryPage({ params }: PageProps) {
       {/* HERO */}
       <section className="relative min-h-screen w-full overflow-hidden">
 
-        <div
-          className="absolute inset-0 bg-cover bg-[position:80%_center] md:bg-center"
-          style={{ backgroundImage: `url('${category.image}')` }}
-        />
+     
+
+        {/* Background mobile */}
+<div
+  className="absolute inset-0 bg-cover bg-center md:hidden"
+  style={{ backgroundImage: `url('${category.imageM}')` }}
+/>
+
+{/* Background desktop */}
+<div
+  className="absolute inset-0 bg-cover bg-center hidden md:block"
+ style={{ backgroundImage: `url('${category.image}')` 
+  }}
+/>
 
         <div className="relative z-10 flex items-center min-h-screen pt-24">
           <div className="w-full px-6 md:px-16 lg:px-24">

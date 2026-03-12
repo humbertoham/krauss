@@ -14,13 +14,20 @@ export default function AboutSection() {
       className="relative min-h-[80vh] w-full overflow-hidden bg-[var(--km-white)]"
     >
       {/* Background image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{
-          backgroundImage: "url('/images/layout/about.png')",
-        }}
-      />
+         <div
+  className="absolute inset-0 bg-cover bg-center md:hidden"
+  style={{
+    backgroundImage: "url('/images/movil/about.jpg')",
+  }}
+/>
 
+{/* Background desktop */}
+<div
+  className="absolute inset-0 bg-cover bg-center hidden md:block"
+  style={{
+    backgroundImage: "url('/images/layout/about.png')",
+  }}
+/>
       {/* Content */}
       <div className="relative z-10 flex items-center min-h-[80vh] py-24">
         <div className="w-full px-6 md:px-16 lg:px-24">

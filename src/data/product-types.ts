@@ -36,6 +36,7 @@ export type ProductCategory = {
   description: string
   image: string
   imageP: string
+  imageM: string
   products: Product[]
   advantages: CategoryAdvantage[]
   functions?: CategoryFunction[]

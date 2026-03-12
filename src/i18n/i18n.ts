@@ -39,6 +39,12 @@ import en_product_page from './locales/en/product-page.json'
 import es_category_page from './locales/es/category-page.json'
 import en_category_page from './locales/en/category-page.json'
 
+import es_common from './locales/es/common.json'
+import en_common  from './locales/en/common.json'
+
+import es_carousel from './locales/es/carousel.json'
+import en_carousel from './locales/en/carousel.json'
+
 const resources = {
   es: {
     about: es_about,
@@ -56,6 +62,8 @@ const resources = {
     products_page: es_products_page,
     product_page: es_product_page,
     category_page: es_category_page,
+    common: es_common,
+    carousel: es_carousel,
   },
   en: {
     about: en_about,
@@ -72,7 +80,9 @@ const resources = {
     navbar: en_navbar,
     products_page: en_products_page,
     product_page: en_product_page,
-    category_page: en_category_page
+    category_page: en_category_page,
+    common: en_common,
+    carousel: en_carousel,
   }
 }
 

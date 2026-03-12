@@ -21,10 +21,21 @@ export default function ProductsPage() {
       {/* HERO */}
       <section className="relative min-h-[90vh] w-full overflow-hidden flex items-center justify-center text-center">
 
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/layout/products.jpg')" }}
-        />
+           {/* Background image */}
+         <div
+  className="absolute inset-0 bg-cover bg-center md:hidden"
+  style={{
+    backgroundImage: "url('/images/movil/products.jpg')",
+  }}
+/>
+
+{/* Background desktop */}
+<div
+  className="absolute inset-0 bg-cover bg-center hidden md:block"
+  style={{
+    backgroundImage: "url('/images/layout/products.jpg')",
+  }}
+/>
 
         <div className="relative z-10 px-6 w-full max-w-[1600px] mx-auto">
 

@@ -24,11 +24,21 @@ export default function AboutPage() {
       {/* HERO SOBRE NOSOTROS */}
       <section className="relative min-h-[90vh] w-full overflow-hidden flex items-center justify-center text-center">
         
-        {/* Background */}
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/layout/nosotros.jpg')" }}
-        />
+       {/* Background mobile */}
+<div
+  className="absolute inset-0 bg-cover bg-center md:hidden"
+  style={{
+    backgroundImage: "url('/images/movil/nosotros.jpg')",
+  }}
+/>
+
+{/* Background desktop */}
+<div
+  className="absolute inset-0 bg-cover bg-center hidden md:block"
+  style={{
+    backgroundImage: "url('/images/layout/nosotros.jpg')",
+  }}
+/>
 
         {/* Content */}
         <div className="relative z-10 px-6 w-full max-w-[1400px] mx-auto">
@@ -67,12 +77,21 @@ export default function AboutPage() {
         id="nosotros"
         className="relative min-h-[80vh] w-full overflow-hidden bg-[var(--km-white)]"
       >
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage: "url('/images/layout/about.png')",
-          }}
-        />
+         {/* Background image */}
+         <div
+  className="absolute inset-0 bg-cover bg-center md:hidden"
+  style={{
+    backgroundImage: "url('/images/movil/about.jpg')",
+  }}
+/>
+
+{/* Background desktop */}
+<div
+  className="absolute inset-0 bg-cover bg-center hidden md:block"
+  style={{
+    backgroundImage: "url('/images/layout/about.png')",
+  }}
+/>
 
         <div className="relative z-10 flex items-center min-h-[80vh] py-24">
           <div className="w-full px-6 md:px-16 lg:px-24">

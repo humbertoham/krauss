@@ -9,6 +9,7 @@ export const categories: ProductCategory[] = [
       'Carretillas elevadoras eléctricas diseñadas para operaciones eficientes, silenciosas y libres de emisiones en entornos industriales.',
     image: '/images/montacarga.jpg',
     imageP: '/images/montacarga.png',
+    imageM: '/images/movil/montacarga.jpg',
     functions: [
   {
     title: 'Manipulación eficiente de cargas pesadas',
@@ -634,6 +635,7 @@ configurations: [
       'Apiladores industriales ideales para el manejo de cargas en espacios reducidos y operaciones logísticas.',
     image: '/images/apilador.jpg',
     imageP: '/images/apilador.png',
+    imageM: '/images/movil/apilador.jpg',
     functions: [
   {
     title: 'Apilamiento vertical eficiente',
@@ -1015,6 +1017,7 @@ configurations: [
       'Plataformas elevadoras de tijera para trabajos en altura con máxima estabilidad y seguridad.',
     image: '/images/tijera.jpg',
     imageP: '/images/tijera.png',
+    imageM: '/images/movil/tijera.jpg',
     functions: [
   {
     title: 'Trabajo seguro en altura',

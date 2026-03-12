@@ -13,6 +13,7 @@ import ProductComparison from '@/components/ProductComparison'
 import CategoryFunctions from '@/components/CategoryFunctions'
 import ProductConfigurationShowcase from '@/components/ProductConfigurationShowcase'
 import * as React from 'react'
+import ImageCarousel from '@/components/ImageCarousel'
 
 
 type PageProps = {
@@ -138,7 +139,7 @@ export default function ProductPage({ params }: PageProps) {
               </div>
 
               {/* CTA */}
-              <div className="mt-10 flex flex-col sm:flex-row gap-3">
+              <div className="mt-10 pb-4 flex flex-col sm:flex-row gap-3">
 
                 <a
                   href={whatsappLink}
@@ -181,7 +182,11 @@ export default function ProductPage({ params }: PageProps) {
           productName={product.name}
           productModel={product.model}
         />
-
+        
+       {category.slug === 'carretilla-elevadora-electrica' && (
+  <ImageCarousel />
+)}
+        
         <RelatedProducts
           category={category}
           currentProductSlug={product.slug}

@@ -31,12 +31,21 @@ export default function ContactPage() {
       {/* HERO */}
       <section className="relative min-h-[90vh] w-full overflow-hidden flex items-center justify-center text-center">
         
-        {/* Background */}
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/layout/contacto.jpg')" }}
-        />
+          {/* Background image */}
+         <div
+  className="absolute inset-0 bg-cover bg-center md:hidden"
+  style={{
+    backgroundImage: "url('/images/movil/contacto.jpg')",
+  }}
+/>
 
+{/* Background desktop */}
+<div
+  className="absolute inset-0 bg-cover bg-center hidden md:block"
+  style={{
+    backgroundImage: "url('/images/layout/contacto.jpg')",
+  }}
+/>
         {/* Content */}
         <div className="relative z-10 px-6 w-full max-w-[1600px] mx-auto">
 

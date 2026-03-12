@@ -107,7 +107,7 @@ export default function CategoryProductGrid({ category }: Props) {
               className="group border border-black/10 bg-white flex flex-col overflow-hidden transition-all duration-300 hover:shadow-xl"
             >
 
-              <div className="relative h-56 overflow-hidden bg-gray-100">
+              <div className="relative h-56 overflow-hidden bg-white">
 
                 <Image
                   src={image}
