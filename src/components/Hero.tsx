@@ -7,7 +7,7 @@ export default function Hero() {
   const { t } = useTranslation('hero')
 
   return (
-    <section className="relative w-full pt-28 pb-56 overflow-hidden">
+    <section className="relative w-full md:pt-0 md:pb-0 md:min-h-[100vh] pt-28 pb-56 overflow-hidden">
 
       {/* Background mobile */}
       <div
@@ -26,7 +26,7 @@ export default function Hero() {
       />
 
       {/* Content */}
-      <div className="relative z-10 flex items-center  md:pt-24">
+      <div className="relative z-10 flex items-center md:min-h-[100vh]  md:pt-24">
 
         <div className="w-full px-5 md:px-16 lg:px-24">
 
