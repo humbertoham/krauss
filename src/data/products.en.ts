@@ -2,7 +2,7 @@ import { ProductCategory } from './product-types'
 
 export const categories: ProductCategory[] = [
   {
-    slug: 'carretilla-elevadora-electrica',
+    slug: 'montacargas-electrico',
     title: 'Electric Forklift',
     description:
       'Electric forklifts designed for efficient, quiet, and emission-free operations in industrial environments.',
@@ -79,6 +79,7 @@ export const categories: ProductCategory[] = [
         shortDescription: 'Compact electric forklift ideal for warehouses.',
         description:
           '1.5-ton electric forklift with hydraulic steering and excellent maneuverability for indoor operations.',
+        descB: 'Equipped with a premium lithium battery that provides fast charging, higher efficiency, and lower maintenance.',
         images: Array.from({ length: 2 }, (_, i) => `/products/ht-1-5t/${i + 1}.png`),
         specs: [
           { label: 'Rated capacity', value: '1500 kg' },
@@ -92,6 +93,7 @@ export const categories: ProductCategory[] = [
           { label: 'Front wheel', value: '650-10' },
           { label: 'Rear wheel', value: '500-8' },
           { label: 'Color', value: 'Customizable' },
+          { label: 'Battery', value: 'Lithium Battery' },
         ],
         heroImage: '/products/ht-1-5t/hero.png',
 
@@ -133,7 +135,8 @@ export const categories: ProductCategory[] = [
         shortDescription: 'Compact 3-wheel model for tight spaces.',
         description:
           '1.6-ton electric forklift with reduced turning radius and hydraulic power steering system.',
-        images: Array.from({ length: 3 }, (_, i) => `/products/ht-1-6t/${i + 1}.png`),
+          descB: 'Equipped with a premium lithium battery that provides fast charging, higher efficiency, and lower maintenance.',
+          images: Array.from({ length: 3 }, (_, i) => `/products/ht-1-6t/${i + 1}.png`),
         specs: [
           { label: 'Rated capacity', value: '1600 kg' },
           { label: 'Lifting height', value: '3000 mm (customizable)' },
@@ -147,6 +150,7 @@ export const categories: ProductCategory[] = [
           { label: 'Front wheel', value: '18x7-10' },
           { label: 'Rear wheel', value: '15x4.5-8' },
           { label: 'Color', value: 'Customizable' },
+          { label: 'Battery', value: 'Lithium Battery' },
         ],
         heroImage: '/products/ht-1-6t/hero.png',
 
@@ -156,11 +160,11 @@ export const categories: ProductCategory[] = [
             image: '/products/ht-1-6t/8.png',
           },
           {
-            title: 'Mast carriage',
+            title: 'Solid Tires',
             image: '/products/ht-1-6t/4.png',
           },
           {
-            title: 'Mast structure',
+            title: 'Load Mast',
             image: '/products/ht-1-6t/6.png',
           },
           {
@@ -184,7 +188,8 @@ export const categories: ProductCategory[] = [
     '2-ton electric forklift with reinforced structure.',
   description:
     '2-ton electric forklift with reinforced H-frame steel structure and high-power motor designed for industrial applications.',
-  images: Array.from({ length: 3 }, (_, i) => `/products/ht-2-0t/${i + 1}.png`),
+    descB: 'Equipped with a premium lithium battery that provides fast charging, higher efficiency, and lower maintenance.',
+    images: Array.from({ length: 3 }, (_, i) => `/products/ht-2-0t/${i + 1}.png`),
   specs: [
     { label: 'Rated capacity', value: '2000 kg' },
     { label: 'Machine weight', value: '2900 kg' },
@@ -198,6 +203,7 @@ export const categories: ProductCategory[] = [
     { label: 'Front wheel', value: '650-10' },
     { label: 'Rear wheel', value: '500-8' },
     { label: 'Color', value: 'Customizable' },
+    { label: 'Battery', value: 'Lithium Battery' },
   ],
   heroImage: '/products/ht-2-0t/hero.png',
 
@@ -235,7 +241,8 @@ export const categories: ProductCategory[] = [
   shortDescription: 'Robust equipment with reinforced C-frame.',
   description:
     '2-ton electric forklift with high-power motor and reinforced steel structure.',
-  images: Array.from({ length: 2 }, (_, i) => `/products/ht-2-0t-b/${i + 1}.png`),
+   descB: 'Equipped with a premium lithium battery that provides fast charging, higher efficiency, and lower maintenance.',
+    images: Array.from({ length: 2 }, (_, i) => `/products/ht-2-0t-b/${i + 1}.png`),
   specs: [
     { label: 'Rated capacity', value: '2000 kg' },
     { label: 'Machine weight', value: '2600 kg' },
@@ -247,6 +254,7 @@ export const categories: ProductCategory[] = [
     { label: 'Front wheel', value: '650-10' },
     { label: 'Rear wheel', value: '500-8' },
     { label: 'Color', value: 'Customizable' },
+    { label: 'Battery', value: 'Lithium Battery' },
   ],
   heroImage: '/products/ht-2-0t-b/hero.png',
 
@@ -284,7 +292,8 @@ export const categories: ProductCategory[] = [
   shortDescription: 'High-performance industrial model.',
   description:
     '2.5-ton electric forklift with 5 kW lifting motor and reinforced structure.',
-  images: Array.from({ length: 2 }, (_, i) => `/products/ht-2-5t-b/${i + 1}.png`),
+    descB: 'Equipped with a premium lithium battery that provides fast charging, higher efficiency, and lower maintenance.',
+    images: Array.from({ length: 2 }, (_, i) => `/products/ht-2-5t-b/${i + 1}.png`),
   specs: [
     { label: 'Rated capacity', value: '2500 kg' },
     { label: 'Lifting height', value: '3000 mm (customizable)' },
@@ -297,6 +306,7 @@ export const categories: ProductCategory[] = [
     { label: 'Front wheel', value: '650-10' },
     { label: 'Rear wheel', value: '18x7-8' },
     { label: 'Color', value: 'Customizable' },
+    { label: 'Battery', value: 'Lithium Battery' },
   ],
   heroImage: '/products/ht-2-5t-b/hero.png',
 
@@ -338,7 +348,8 @@ export const categories: ProductCategory[] = [
     '3-ton electric forklift with reinforced structure.',
   description:
     '3-ton electric forklift designed for demanding industrial operations with customization options.',
-  images: Array.from({ length: 2 }, (_, i) => `/products/ht-3-0t-h/${i + 1}.png`),
+    descB: 'Equipped with a premium lithium battery that provides fast charging, higher efficiency, and lower maintenance.',
+    images: Array.from({ length: 2 }, (_, i) => `/products/ht-3-0t-h/${i + 1}.png`),
   specs: [
     { label: 'Rated capacity', value: '3000 kg' },
     { label: 'Lifting height', value: '3000 mm (customizable)' },
@@ -350,6 +361,7 @@ export const categories: ProductCategory[] = [
     { label: 'Front wheel', value: '650-10' },
     { label: 'Rear wheel', value: '500-8' },
     { label: 'Color', value: 'Customizable' },
+    { label: 'Battery', value: 'Lithium Battery' },
   ],
   heroImage: '/products/ht-3-0t-h/hero.png',
 
@@ -368,7 +380,7 @@ export const categories: ProductCategory[] = [
     },
     {
       title: 'Hydraulic cylinder',
-      image: '/products/ht-3-0t-h/8.png',
+      image: '/products/ht-3-0t-h/7.png',
     },
     {
       title: 'Solid tires',
@@ -387,7 +399,8 @@ export const categories: ProductCategory[] = [
   shortDescription: 'Electric solution for heavy loads.',
   description:
     '3.5-ton electric forklift with extended wheelbase and hydraulic steering.',
-  images: Array.from({ length: 3 }, (_, i) => `/products/ht-3-5t/${i + 1}.png`),
+   descB: 'Equipped with a premium lithium battery that provides fast charging, higher efficiency, and lower maintenance.',
+    images: Array.from({ length: 3 }, (_, i) => `/products/ht-3-5t/${i + 1}.png`),
   specs: [
     { label: 'Rated capacity', value: '3500 kg' },
     { label: 'Lifting height', value: '3000 mm (customizable)' },
@@ -398,6 +411,7 @@ export const categories: ProductCategory[] = [
     { label: 'Front wheel', value: '28x9-15' },
     { label: 'Rear wheel', value: '650-10' },
     { label: 'Color', value: 'Customizable' },
+    { label: 'Battery', value: 'Lithium Battery' },
   ],
   heroImage: '/products/ht-3-5t/hero.png',
 
@@ -435,7 +449,8 @@ export const categories: ProductCategory[] = [
   shortDescription: 'High-performance electric equipment.',
   description:
     '4-ton electric forklift with wide turning radius and reinforced structure.',
-  images: Array.from({ length: 2 }, (_, i) => `/products/ht-4-0t/${i + 1}.png`),
+   descB: 'Equipped with a premium lithium battery that provides fast charging, higher efficiency, and lower maintenance.',
+    images: Array.from({ length: 2 }, (_, i) => `/products/ht-4-0t/${i + 1}.png`),
   specs: [
     { label: 'Rated capacity', value: '4000 kg' },
     { label: 'Lifting height', value: '3000 mm (customizable)' },
@@ -446,6 +461,7 @@ export const categories: ProductCategory[] = [
     { label: 'Front wheel', value: '28x9-15' },
     { label: 'Rear wheel', value: '650-10' },
     { label: 'Color', value: 'Customizable' },
+    { label: 'Battery', value: 'Lithium Battery' },
   ],
   heroImage: '/products/ht-4-0t/hero.png',
 
@@ -475,7 +491,8 @@ export const categories: ProductCategory[] = [
   shortDescription: 'High-capacity electric forklift.',
   description:
     '5-ton electric forklift with high-power AC motor and robust structure.',
-  images: Array.from({ length: 2 }, (_, i) => `/products/ht-5-0t/${i + 1}.png`),
+    descB: 'Equipped with a premium lithium battery that provides fast charging, higher efficiency, and lower maintenance.',
+    images: Array.from({ length: 2 }, (_, i) => `/products/ht-5-0t/${i + 1}.png`),
   specs: [
     { label: 'Rated capacity', value: '5000 kg' },
     { label: 'Lifting motor', value: 'AC 25.5 kW' },
@@ -486,6 +503,7 @@ export const categories: ProductCategory[] = [
     { label: 'Front wheel', value: '28x9-15' },
     { label: 'Rear wheel', value: '700-12' },
     { label: 'Color', value: 'Customizable' },
+    { label: 'Battery', value: 'Lithium Battery' },
   ],
   heroImage: '/products/ht-5-0t/hero.png',
 
@@ -527,7 +545,8 @@ export const categories: ProductCategory[] = [
     'High-capacity industrial electric forklift.',
   description:
     '7-ton electric forklift designed for heavy industrial operations with hydraulic power steering.',
-  images: Array.from({ length: 2 }, (_, i) => `/products/ht-7-0t/${i + 1}.png`),
+   descB: 'Equipped with a premium lithium battery that provides fast charging, higher efficiency, and lower maintenance.',
+    images: Array.from({ length: 2 }, (_, i) => `/products/ht-7-0t/${i + 1}.png`),
   specs: [
     { label: 'Rated capacity', value: '7000 kg' },
     { label: 'Lifting height', value: '3000 mm (customizable)' },
@@ -542,6 +561,7 @@ export const categories: ProductCategory[] = [
     { label: 'Rear wheel', value: '27x10-12' },
     { label: 'Steering', value: 'Hydraulic power steering' },
     { label: 'Color', value: 'Customizable' },
+    { label: 'Battery', value: 'Lithium Battery' },
   ],
   heroImage: '/products/ht-7-0t/hero.png',
 
@@ -583,7 +603,8 @@ export const categories: ProductCategory[] = [
   shortDescription: 'Electric solution for ultra-heavy loads.',
   description:
     '10-ton electric forklift designed for large-scale industrial operations.',
-  images: Array.from({ length: 3 }, (_, i) => `/products/ht-10t/${i + 1}.png`),
+    descB: 'Equipped with a premium lithium battery that provides fast charging, higher efficiency, and lower maintenance.',
+    images: Array.from({ length: 3 }, (_, i) => `/products/ht-10t/${i + 1}.png`),
   specs: [
     { label: 'Rated capacity', value: '10000 kg' },
     { label: 'Traction motor power', value: '18 kW' },
@@ -594,6 +615,7 @@ export const categories: ProductCategory[] = [
     { label: 'Front wheel', value: '900-20' },
     { label: 'Rear wheel', value: '900-16' },
     { label: 'Color', value: 'Customizable' },
+    { label: 'Battery', value: 'Lithium Battery' },
   ],
   heroImage: '/products/ht-10t/hero.png',
 
@@ -701,7 +723,8 @@ export const categories: ProductCategory[] = [
         'Compact stacker ideal for light loads and internal logistics.',
       description:
         'Self-supporting electric stacker with configurable capacities between 500 and 1500 kg. Available in automatic and semi-automatic versions.',
-      images: Array.from({ length: 3 }, (_, i) => `/products/ht-cdd5/${i + 1}.png`),
+       descB: 'Equipped with a premium lithium battery that provides fast charging, higher efficiency, and lower maintenance.',
+        images: Array.from({ length: 3 }, (_, i) => `/products/ht-cdd5/${i + 1}.png`),
       specs: [
         { label: 'Rated capacity', value: '500–1500 kg' },
         { label: 'Lifting height', value: '1600–2870 mm' },
@@ -711,6 +734,7 @@ export const categories: ProductCategory[] = [
         { label: 'Wheelbase', value: '787–974 mm' },
         { label: 'Turning radius', value: '1147–1173 mm' },
         { label: 'Operation type', value: 'Walkie' },
+        { label: 'Battery', value: 'Lithium Battery' },
       ],
       heroImage: '/products/ht-cdd5/hero.png',
 
@@ -748,7 +772,8 @@ export const categories: ProductCategory[] = [
     'High-reach industrial electric stacker.',
   description:
     '1.5-ton electric stacker with lifting height up to 6000 mm, ideal for high warehouse racks.',
-  images: Array.from({ length: 2 }, (_, i) => `/products/ht-cdd15/${i + 1}.png`),
+    descB: 'Equipped with a premium lithium battery that provides fast charging, higher efficiency, and lower maintenance.',
+    images: Array.from({ length: 2 }, (_, i) => `/products/ht-cdd15/${i + 1}.png`),
   specs: [
     { label: 'Rated capacity', value: '1500 kg' },
     { label: 'Lifting height', value: '3000–6000 mm' },
@@ -759,6 +784,7 @@ export const categories: ProductCategory[] = [
     { label: 'Fork size', value: '1150×160×60 mm' },
     { label: 'Turning radius', value: '1435 mm' },
     { label: 'Operation type', value: 'Walkie' },
+    { label: 'Battery', value: 'Lithium Battery' },
   ],
   heroImage: '/products/ht-cdd15/hero.png',
 
@@ -793,7 +819,8 @@ export const categories: ProductCategory[] = [
     'Rough terrain stacker designed for uneven surfaces.',
   description:
     'Rough terrain electric stacker with configurable capacity between 1500 and 3000 kg, ideal for outdoor operations and uneven terrain.',
-  images: Array.from({ length: 2 }, (_, i) => `/products/ht-cyd15/${i + 1}.png`),
+    descB: 'Equipped with a premium lithium battery that provides fast charging, higher efficiency, and lower maintenance.',
+    images: Array.from({ length: 2 }, (_, i) => `/products/ht-cyd15/${i + 1}.png`),
   specs: [
     { label: 'Rated capacity', value: '1500–3000 kg' },
     { label: 'Lifting height', value: '1600–3000 mm' },
@@ -804,6 +831,7 @@ export const categories: ProductCategory[] = [
     { label: 'Turning radius', value: '1355 mm' },
     { label: 'Tire type', value: 'Polyurethane' },
     { label: 'Operation type', value: 'Walkie' },
+    { label: 'Battery', value: 'Lithium Battery' },
   ],
   heroImage: '/products/ht-cyd15/hero.png',
 
@@ -834,7 +862,8 @@ export const categories: ProductCategory[] = [
     'Stand-up electric reach stacker.',
   description:
     '1.6-ton electric reach stacker designed for efficient vertical storage in warehouses.',
-  images: Array.from({ length: 3 }, (_, i) => `/products/ht-cqd16/${i + 1}.png`),
+   descB: 'Equipped with a premium lithium battery that provides fast charging, higher efficiency, and lower maintenance.',
+    images: Array.from({ length: 3 }, (_, i) => `/products/ht-cqd16/${i + 1}.png`),
   specs: [
     { label: 'Rated capacity', value: '1600 kg' },
     { label: 'Lifting height', value: '3000 mm' },
@@ -845,6 +874,7 @@ export const categories: ProductCategory[] = [
     { label: 'Fork size', value: '1070×100×40 mm' },
     { label: 'Turning radius', value: '1710–2145 mm' },
     { label: 'Operation type', value: 'Stand-up' },
+    { label: 'Battery', value: 'Lithium Battery' },
   ],
   heroImage: '/products/ht-cqd16/hero.png',
 
@@ -890,7 +920,8 @@ export const categories: ProductCategory[] = [
     'Electric reach stacker for intensive use.',
   description:
     '2-ton electric reach stacker with polyurethane tires and a design optimized for continuous operation.',
-  images: Array.from({ length: 3 }, (_, i) => `/products/ht-cqd20/${i + 1}.png`),
+    descB: 'Equipped with a premium lithium battery that provides fast charging, higher efficiency, and lower maintenance.',
+    images: Array.from({ length: 3 }, (_, i) => `/products/ht-cqd20/${i + 1}.png`),
   specs: [
     { label: 'Rated capacity', value: '2000 kg' },
     { label: 'Lifting height', value: '3000 mm' },
@@ -902,6 +933,7 @@ export const categories: ProductCategory[] = [
     { label: 'Turning radius', value: '1910–2340 mm' },
     { label: 'Tire type', value: 'Polyurethane' },
     { label: 'Operation type', value: 'Stand-up' },
+    { label: 'Battery', value: 'Lithium Battery' },
   ],
   heroImage: '/products/ht-cqd20/hero.png',
 
@@ -948,7 +980,8 @@ export const categories: ProductCategory[] = [
     'Robust electric stacker for demanding logistics operations.',
   description:
     '2-ton electric stacker designed for stability and efficiency in warehouse operations.',
-  images: Array.from({ length: 2 }, (_, i) => `/products/ht-cdd20/${i + 1}.png`),
+   descB: 'Equipped with a premium lithium battery that provides fast charging, higher efficiency, and lower maintenance.',
+    images: Array.from({ length: 2 }, (_, i) => `/products/ht-cdd20/${i + 1}.png`),
   specs: [
     { label: 'Rated capacity', value: '2000 kg' },
     { label: 'Lifting height', value: '1600–3000 mm' },
@@ -959,6 +992,7 @@ export const categories: ProductCategory[] = [
     { label: 'Fork size', value: '1220×185×55 mm' },
     { label: 'Turning radius', value: '1755–2200 mm' },
     { label: 'Operation type', value: 'Walkie' },
+    { label: 'Battery', value: 'Lithium Battery' },
   ],
   heroImage: '/products/ht-1-6t/hero.png',
 
@@ -1075,7 +1109,8 @@ export const categories: ProductCategory[] = [
         'Mobile scissor lift platform for work at heights from 4 to 18 meters.',
       description:
         'Mobile scissor lift platform with capacity between 300 and 1000 kg, suitable for multiple operators and different power sources.',
-      images: Array.from({ length: 3 }, (_, i) => `/products/ht-mp/${i + 1}.png`),
+       descB: 'Equipped with a premium lithium battery that provides fast charging, higher efficiency, and lower maintenance.',
+        images: Array.from({ length: 3 }, (_, i) => `/products/ht-mp/${i + 1}.png`),
       specs: [
         { label: 'Rated capacity', value: '300–1000 kg' },
         { label: 'Platform height', value: '4–18 m' },
@@ -1126,7 +1161,8 @@ export const categories: ProductCategory[] = [
     'Rough terrain scissor lift platform for construction and outdoor use.',
   description:
     'Rough terrain lifting platform with capacity between 230 and 450 kg, equipped with an emergency lowering system and waterproof protection.',
-  images: Array.from({ length: 2 }, (_, i) => `/products/ht-gtjz-tt/${i + 1}.png`),
+   descB: '',
+    images: Array.from({ length: 2 }, (_, i) => `/products/ht-gtjz-tt/${i + 1}.png`),
   specs: [
     { label: 'Rated capacity', value: '230–450 kg' },
     { label: 'Platform height', value: '4.5–12 m' },
@@ -1175,7 +1211,8 @@ export const categories: ProductCategory[] = [
     'Compact scissor lift platform with quick extension system.',
   description:
     'Electric lifting platform with pedal-operated extension, ideal for indoor projects and industrial maintenance.',
-  images: Array.from({ length: 2 }, (_, i) => `/products/ht-gtjz-ruedas/${i + 1}.png`),
+    descB: '',
+    images: Array.from({ length: 2 }, (_, i) => `/products/ht-gtjz-ruedas/${i + 1}.png`),
   specs: [
     { label: 'Rated capacity', value: '230–450 kg' },
     { label: 'Platform height', value: '6–12 m' },

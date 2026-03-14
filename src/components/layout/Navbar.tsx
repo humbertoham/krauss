@@ -248,7 +248,7 @@ export default function Navbar() {
 
                 <div className="flex items-center gap-2 text-sm text-[var(--km-gray-dark)]">
                   <FiMail className="text-[var(--km-red)]" />
-                  ventas@kraussmachinery.com
+                  sales@kraussindustrial.com
                 </div>
 
                 <Link

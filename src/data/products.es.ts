@@ -3,10 +3,10 @@ import { ProductCategory } from './product-types'
 
 export const categories: ProductCategory[] = [
   {
-    slug: 'carretilla-elevadora-electrica',
-    title: 'Carretilla Elevadora Eléctrica',
+    slug: 'montacargas-electrico',
+    title: 'Montacargas Eléctrico',
     description:
-      'Carretillas elevadoras eléctricas diseñadas para operaciones eficientes, silenciosas y libres de emisiones en entornos industriales.',
+      'Montacargas eléctricos diseñados para operaciones eficientes, silenciosas y libres de emisiones en entornos industriales.',
     image: '/images/montacarga.jpg',
     imageP: '/images/montacarga.png',
     imageM: '/images/movil/montacarga.jpg',
@@ -74,13 +74,14 @@ export const categories: ProductCategory[] = [
   {
     slug: 'ht-1-5t',
     model: 'HT-1.5T',
-    name: 'Autoelevador Eléctrico 1.5T',
+    name: 'Montacargas Eléctrico 1.5T',
     tagline: 'Impulsando el progreso, sosteniendo el planeta',
     capacityKg: 1500,
     wheels: 4,
-    shortDescription: 'Carretilla eléctrica compacta ideal para almacenes.',
+    shortDescription: 'Montacargas eléctrico compacto ideal para almacenes.',
     description:
-      'Autoelevador eléctrico de 1.5 toneladas con dirección hidráulica y excelente maniobrabilidad para operaciones interiores.',
+      'Montacargas eléctrico de 1.5 toneladas con dirección hidráulica y excelente maniobrabilidad para operaciones interiores.',
+      descB: 'Equipada con una batería de litio premium que ofrece carga rápida, mayor eficiencia y menor mantenimiento.', 
     images: Array.from({ length: 2 }, (_, i) => `/products/ht-1-5t/${i + 1}.png`),
     specs: [
       { label: 'Capacidad nominal', value: '1500 kg' },
@@ -94,6 +95,7 @@ export const categories: ProductCategory[] = [
       { label: 'Rueda delantera', value: '650-10' },
       { label: 'Rueda trasera', value: '500-8' },
       { label: 'Color', value: 'Personalizable' },
+      { label: 'Batería', value: 'Batería de litio' },
     ],
     heroImage: '/products/ht-1-5t/hero.png',
 
@@ -135,6 +137,7 @@ configurations: [
     shortDescription: 'Modelo compacto de 3 ruedas para espacios reducidos.',
     description:
       'Montacargas eléctrico de 1.6 toneladas con radio de giro reducido y sistema hidráulico de potencia.',
+      descB: 'Equipada con una batería de litio premium que ofrece carga rápida, mayor eficiencia y menor mantenimiento.', 
     images: Array.from({ length: 3 }, (_, i) => `/products/ht-1-6t/${i + 1}.png`),
     specs: [
       { label: 'Capacidad nominal', value: '1600 kg' },
@@ -149,6 +152,7 @@ configurations: [
       { label: 'Rueda delantera', value: '18x7-10' },
       { label: 'Rueda trasera', value: '15x4.5-8' },
       { label: 'Color', value: 'Personalizable' },
+      { label: 'Batería', value: 'Batería de litio' },
     ],     
     heroImage: '/products/ht-1-6t/hero.png',
 
@@ -158,11 +162,11 @@ configurations: [
     image: '/products/ht-1-6t/8.png',
   },
   {
-    title: 'Cansar',
+    title: 'Neumáticos macizos',
     image: '/products/ht-1-6t/4.png',
   },
   {
-    title: 'Longmen',
+    title: 'Mástil de carga',
     image: '/products/ht-1-6t/6.png',
   },
    {
@@ -186,7 +190,8 @@ configurations: [
   shortDescription:
     'Montacargas eléctrico de 2 toneladas con estructura reforzada.',
   description:
-    'Autoelevador eléctrico de 2 toneladas con marco en H de acero reforzado y motor de alta potencia para aplicaciones industriales.',
+    'Montacargas eléctrico de 2 toneladas con marco en H de acero reforzado y motor de alta potencia para aplicaciones industriales.',
+    descB: 'Equipada con una batería de litio premium que ofrece carga rápida, mayor eficiencia y menor mantenimiento.', 
   images: Array.from({ length: 3 }, (_, i) => `/products/ht-2-0t/${i + 1}.png`),
   specs: [
     { label: 'Capacidad nominal', value: '2000 kg' },
@@ -201,6 +206,7 @@ configurations: [
     { label: 'Rueda delantera', value: '650-10' },
     { label: 'Rueda trasera', value: '500-8' },
     { label: 'Color', value: 'Personalizable' },
+    { label: 'Batería', value: 'Batería de litio' },
   ],
       heroImage: '/products/ht-2-0t/hero.png',
 
@@ -231,13 +237,14 @@ configurations: [
   {
     slug: 'ht-2-0t-b',
     model: 'HT-2.0T-B',
-    name: 'Autoelevador Eléctrico 2.0T',
+    name: 'Montacargas Eléctrico 2.0T',
     tagline: 'Versión personalizada',
     capacityKg: 2000,
     wheels: 4,
     shortDescription: 'Equipo robusto con marco reforzado en C.',
     description:
-      'Carretilla eléctrica de 2 toneladas con motor de alta potencia y estructura de acero reforzada.',
+      'Montacargas eléctrico de 2 toneladas con motor de alta potencia y estructura de acero reforzada.',
+      descB: 'Equipada con una batería de litio premium que ofrece carga rápida, mayor eficiencia y menor mantenimiento.', 
     images: Array.from({ length: 2 }, (_, i) => `/products/ht-2-0t-b/${i + 1}.png`),
     specs: [
       { label: 'Capacidad nominal', value: '2000 kg' },
@@ -250,6 +257,7 @@ configurations: [
       { label: 'Rueda delantera', value: '650-10' },
       { label: 'Rueda trasera', value: '500-8' },
       { label: 'Color', value: 'Personalizable' },
+      { label: 'Batería', value: 'Batería de litio' },
     ],
     heroImage: '/products/ht-2-0t-b/hero.png',
 
@@ -280,13 +288,14 @@ configurations: [
   {
     slug: 'ht-2-5t-b',
     model: 'HT-2.5T-B',
-    name: 'Carretilla Elevadora Eléctrica 2.5T',
+    name: 'Montacargas Eléctrico 2.5T',
     tagline: 'Impulsar el progreso y mantener el planeta',
     capacityKg: 2500,
     wheels: 4,
     shortDescription: 'Modelo industrial de alto rendimiento.',
     description:
-      'Carretilla eléctrica de 2.5 toneladas con motor de elevación de 5kW y estructura reforzada.',
+      'Montacargas eléctrico de 2.5 toneladas con motor de elevación de 5kW y estructura reforzada.',
+      descB: 'Equipada con una batería de litio premium que ofrece carga rápida, mayor eficiencia y menor mantenimiento.', 
     images: Array.from({ length: 2 }, (_, i) => `/products/ht-2-5t-b/${i + 1}.png`),
     specs: [
       { label: 'Capacidad nominal', value: '2500 kg' },
@@ -300,6 +309,7 @@ configurations: [
       { label: 'Rueda delantera', value: '650-10' },
       { label: 'Rueda trasera', value: '18x7-8' },
       { label: 'Color', value: 'Personalizable' },
+      { label: 'Batería', value: 'Batería de litio' },
     ],
     heroImage: '/products/ht-2-5t-b/hero.png',
 
@@ -333,14 +343,15 @@ configurations: [
 {
   slug: 'ht-3-0t-h',
   model: '3.0T-H',
-  name: 'Carretilla Elevadora Eléctrica 3T',
+  name: 'Montacargas Eléctrico 3T',
   tagline: 'Impulsar el progreso y mantener el planeta',
   capacityKg: 3000,
   wheels: 4,
   shortDescription:
-    'Carretilla eléctrica de 3 toneladas con estructura reforzada.',
+    'Montacargas eléctrico de 3 toneladas con estructura reforzada.',
   description:
     'Montacargas eléctrico de 3 toneladas diseñado para operaciones industriales exigentes con opción de personalización.',
+    descB: 'Equipada con una batería de litio premium que ofrece carga rápida, mayor eficiencia y menor mantenimiento.', 
   images: Array.from({ length: 2 }, (_, i) => `/products/ht-3-0t-h/${i + 1}.png`),
   specs: [
     { label: 'Capacidad nominal', value: '3000 kg' },
@@ -353,6 +364,7 @@ configurations: [
     { label: 'Rueda delantera', value: '650-10' },
     { label: 'Rueda trasera', value: '500-8' },
     { label: 'Color', value: 'Personalizable' },
+    { label: 'Batería', value: 'Batería de litio' },
   ],
   heroImage: '/products/ht-3-0t-h/hero.png',
 
@@ -371,7 +383,7 @@ configurations: [
   },
    {
     title: 'Cilindro hidráulico',
-    image: '/products/ht-3-0t-h/8.png',
+    image: '/products/ht-3-0t-h/7.png',
   },
    {
     title: 'Neumáticos sólidos',
@@ -383,13 +395,14 @@ configurations: [
   {
     slug: 'ht-3-5t',
     model: 'HT-3.5T',
-    name: 'Carretilla Elevadora Eléctrica 3.5T',
+    name: 'Montacargas Eléctrico 3.5T',
     tagline: 'Potencia y estabilidad industrial',
     capacityKg: 3500,
     wheels: 4,
     shortDescription: 'Solución eléctrica para cargas pesadas.',
     description:
       'Montacargas eléctrico de 3.5 toneladas con distancia entre ejes ampliada y dirección hidráulica.',
+      descB: 'Equipada con una batería de litio premium que ofrece carga rápida, mayor eficiencia y menor mantenimiento.', 
     images: Array.from({ length: 3 }, (_, i) => `/products/ht-3-5t/${i + 1}.png`),
     specs: [
       { label: 'Capacidad nominal', value: '3500 kg' },
@@ -401,6 +414,7 @@ configurations: [
       { label: 'Rueda delantera', value: '28x9-15' },
       { label: 'Rueda trasera', value: '650-10' },
       { label: 'Color', value: 'Personalizable' },
+      { label: 'Batería', value: 'Batería de litio' },
     ],
     heroImage: '/products/ht-3-5t/hero.png',
 
@@ -431,13 +445,14 @@ configurations: [
   {
     slug: 'ht-4-0t',
     model: 'HT-4.0T',
-    name: 'Carretilla Elevadora Eléctrica 4T',
+    name: 'Montacargas Eléctrico 4T',
     tagline: 'Mayor potencia y estabilidad',
     capacityKg: 4000,
     wheels: 4,
     shortDescription: 'Equipo eléctrico de alto desempeño.',
     description:
-      'Autoelevador eléctrico de 4 toneladas con amplio radio de giro y estructura reforzada.',
+      'Montacargas eléctrico de 4 toneladas con amplio radio de giro y estructura reforzada.',
+      descB: 'Equipada con una batería de litio premium que ofrece carga rápida, mayor eficiencia y menor mantenimiento.', 
     images: Array.from({ length: 2 }, (_, i) => `/products/ht-4-0t/${i + 1}.png`),
     specs: [
       { label: 'Capacidad nominal', value: '4000 kg' },
@@ -449,6 +464,7 @@ configurations: [
       { label: 'Rueda delantera', value: '28x9-15' },
       { label: 'Rueda trasera', value: '650-10' },
       { label: 'Color', value: 'Personalizable' },
+      { label: 'Batería', value: 'Batería de litio' },
     ],
     heroImage: '/products/ht-4-0t/hero.png',
 
@@ -472,13 +488,14 @@ configurations: [
   {
     slug: 'ht-5-0t',
     model: 'HT-5.0T',
-    name: 'Carretilla Elevadora Eléctrica 5T',
+    name: 'Montacargas Eléctrico 5T',
     tagline: 'Rendimiento industrial pesado',
     capacityKg: 5000,
     wheels: 4,
     shortDescription: 'Montacargas eléctrico de alta capacidad.',
     description:
-      'Carretilla eléctrica de 5 toneladas con motor AC de alta potencia y estructura robusta.',
+      'Montacargas eléctrico de 5 toneladas con motor AC de alta potencia y estructura robusta.',
+      descB: 'Equipada con una batería de litio premium que ofrece carga rápida, mayor eficiencia y menor mantenimiento.', 
     images: Array.from({ length: 2 }, (_, i) => `/products/ht-5-0t/${i + 1}.png`),
     specs: [
       { label: 'Capacidad nominal', value: '5000 kg' },
@@ -490,6 +507,7 @@ configurations: [
       { label: 'Rueda delantera', value: '28x9-15' },
       { label: 'Rueda trasera', value: '700-12' },
       { label: 'Color', value: 'Personalizable' },
+      { label: 'Batería', value: 'Batería de litio' },
     ],
     heroImage: '/products/ht-5-0t/hero.png',
 
@@ -523,14 +541,15 @@ configurations: [
   {
   slug: 'ht-7-0t',
   model: 'HT-7.0T',
-  name: 'Carretilla Elevadora Eléctrica 7T',
+  name: 'Montacargas Eléctrico 7T',
   tagline: 'Impulsar el progreso y mantener el planeta',
   capacityKg: 7000,
   wheels: 4,
   shortDescription:
     'Montacargas eléctrico industrial de alta capacidad.',
   description:
-    'Carretilla elevadora eléctrica de 7 toneladas diseñada para operaciones industriales pesadas con dirección hidráulica de potencia.',
+    'Montacargas eléctrico de 7 toneladas diseñada para operaciones industriales pesadas con dirección hidráulica de potencia.',
+    descB: 'Equipada con una batería de litio premium que ofrece carga rápida, mayor eficiencia y menor mantenimiento.', 
   images: Array.from({ length: 2 }, (_, i) => `/products/ht-7-0t/${i + 1}.png`),
   specs: [
     { label: 'Capacidad nominal', value: '7000 kg' },
@@ -546,6 +565,7 @@ configurations: [
     { label: 'Rueda trasera', value: '27x10-12' },
     { label: 'Dirección', value: 'Hidráulica asistida' },
     { label: 'Color', value: 'Personalizable' },
+    { label: 'Batería', value: 'Batería de litio' },
   ],
   heroImage: '/products/ht-7-0t/hero.png',
 
@@ -581,13 +601,14 @@ configurations: [
   {
     slug: 'ht-10t',
     model: 'HT-10T',
-    name: 'Carretilla Elevadora Eléctrica 10T',
+    name: 'Montacargas Eléctrico 10T',
     tagline: 'Máxima capacidad eléctrica industrial',
     capacityKg: 10000,
     wheels: 4,
     shortDescription: 'Solución eléctrica para cargas ultra pesadas.',
     description:
-      'Autoelevador eléctrico de 10 toneladas diseñado para operaciones industriales de gran escala.',
+      'Montacargas eléctrico de 10 toneladas diseñado para operaciones industriales de gran escala.',
+      descB: 'Equipada con una batería de litio premium que ofrece carga rápida, mayor eficiencia y menor mantenimiento.', 
     images: Array.from({ length: 3 }, (_, i) => `/products/ht-10t/${i + 1}.png`),
     specs: [
       { label: 'Capacidad nominal', value: '10000 kg' },
@@ -599,6 +620,7 @@ configurations: [
       { label: 'Rueda delantera', value: '900-20' },
       { label: 'Rueda trasera', value: '900-16' },
       { label: 'Color', value: 'Personalizable' },
+      { label: 'Batería', value: 'Batería de litio' },
     ],
     heroImage: '/products/ht-10t/hero.png',
 
@@ -709,7 +731,8 @@ configurations: [
       'Apilador compacto ideal para cargas ligeras y logística interna.',
     description:
       'Apilador eléctrico autoportante con capacidades configurables entre 500 y 1500 kg. Disponible en versión automática y semiautomática.',
-    images: Array.from({ length: 3 }, (_, i) => `/products/ht-cdd5/${i + 1}.png`),
+    descB: 'Equipada con una batería de litio premium que ofrece carga rápida, mayor eficiencia y menor mantenimiento.', 
+      images: Array.from({ length: 3 }, (_, i) => `/products/ht-cdd5/${i + 1}.png`),
     specs: [
       { label: 'Capacidad nominal', value: '500–1500 kg' },
       { label: 'Altura de elevación', value: '1600–2870 mm' },
@@ -719,6 +742,7 @@ configurations: [
       { label: 'Distancia entre ejes', value: '787–974 mm' },
       { label: 'Radio de giro', value: '1147–1173 mm' },
       { label: 'Tipo de operación', value: 'Walkie' },
+      { label: 'Batería', value: 'Batería de litio' },
     ],
     heroImage: '/products/ht-cdd5/hero.png',
 
@@ -757,6 +781,7 @@ configurations: [
       'Apilador eléctrico industrial de alto alcance.',
     description:
       'Apilador eléctrico de 1.5 toneladas con altura máxima de elevación hasta 6000 mm, ideal para racks altos.',
+      descB: 'Equipada con una batería de litio premium que ofrece carga rápida, mayor eficiencia y menor mantenimiento.', 
     images: Array.from({ length: 2 }, (_, i) => `/products/ht-cdd15/${i + 1}.png`),
     specs: [
       { label: 'Capacidad nominal', value: '1500 kg' },
@@ -768,6 +793,7 @@ configurations: [
       { label: 'Tamaño de horquillas', value: '1150×160×60 mm' },
       { label: 'Radio de giro', value: '1435 mm' },
       { label: 'Tipo de operación', value: 'Walkie' },
+      { label: 'Batería', value: 'Batería de litio' },
     ],
     heroImage: '/products/ht-cdd15/hero.png',
 
@@ -802,7 +828,8 @@ configurations: [
     'Apilador todoterreno diseñado para superficies irregulares.',
   description:
     'Apilador eléctrico todoterreno con capacidad configurable entre 1500 y 3000 kg, ideal para operaciones en exteriores y terrenos irregulares.',
-  images: Array.from({ length: 2 }, (_, i) => `/products/ht-cyd15/${i + 1}.png`),
+  descB: 'Equipada con una batería de litio premium que ofrece carga rápida, mayor eficiencia y menor mantenimiento.', 
+    images: Array.from({ length: 2 }, (_, i) => `/products/ht-cyd15/${i + 1}.png`),
   specs: [
     { label: 'Capacidad nominal', value: '1500–3000 kg' },
     { label: 'Altura de elevación', value: '1600–3000 mm' },
@@ -813,6 +840,7 @@ configurations: [
     { label: 'Radio de giro', value: '1355 mm' },
     { label: 'Tipo de neumático', value: 'Poliuretano' },
     { label: 'Tipo de operación', value: 'Walkie' },
+    { label: 'Batería', value: 'Batería de litio' },
   ],
   heroImage: '/products/ht-cyd15/hero.png',
 
@@ -846,6 +874,7 @@ configurations: [
       'Apilador retráctil eléctrico de operación de pie.',
     description:
       'Apilador eléctrico retráctil de 1.6 toneladas diseñado para almacenamiento vertical eficiente.',
+      descB: 'Equipada con una batería de litio premium que ofrece carga rápida, mayor eficiencia y menor mantenimiento.', 
     images: Array.from({ length: 3 }, (_, i) => `/products/ht-cqd16/${i + 1}.png`),
     specs: [
       { label: 'Capacidad nominal', value: '1600 kg' },
@@ -857,6 +886,7 @@ configurations: [
       { label: 'Tamaño de horquillas', value: '1070×100×40 mm' },
       { label: 'Radio de giro', value: '1710–2145 mm' },
       { label: 'Tipo de operación', value: 'Stand-up' },
+      { label: 'Batería', value: 'Batería de litio' },
     ],
     heroImage: '/products/ht-cqd16/hero.png',
 
@@ -903,6 +933,7 @@ configurations: [
       'Apilador retráctil eléctrico para uso intensivo.',
     description:
       'Apilador eléctrico retráctil de 2 toneladas con neumáticos de poliuretano y diseño para trabajo continuo.',
+      descB: 'Equipada con una batería de litio premium que ofrece carga rápida, mayor eficiencia y menor mantenimiento.', 
     images: Array.from({ length: 3 }, (_, i) => `/products/ht-cqd20/${i + 1}.png`),
     specs: [
       { label: 'Capacidad nominal', value: '2000 kg' },
@@ -915,6 +946,7 @@ configurations: [
       { label: 'Radio de giro', value: '1910–2340 mm' },
       { label: 'Tipo de neumático', value: 'Poliuretano' },
       { label: 'Tipo de operación', value: 'Stand-up' },
+      { label: 'Batería', value: 'Batería de litio' },
     ],
     heroImage: '/products/ht-cqd20/hero.png',
 
@@ -961,6 +993,7 @@ configurations: [
       'Apilador eléctrico robusto para operaciones logísticas exigentes.',
     description:
       'Apilador eléctrico de 2 toneladas diseñado para estabilidad y eficiencia en operaciones de almacén.',
+      descB: 'Equipada con una batería de litio premium que ofrece carga rápida, mayor eficiencia y menor mantenimiento.', 
     images: Array.from({ length: 2 }, (_, i) => `/products/ht-cdd20/${i + 1}.png`),
     specs: [
       { label: 'Capacidad nominal', value: '2000 kg' },
@@ -972,8 +1005,9 @@ configurations: [
       { label: 'Tamaño de horquillas', value: '1220×185×55 mm' },
       { label: 'Radio de giro', value: '1755–2200 mm' },
       { label: 'Tipo de operación', value: 'Walkie' },
+      { label: 'Batería', value: 'Batería de litio' },
     ],
-    heroImage: '/products/ht-1-6t/hero.png',
+    heroImage: '/products/ht-cdd20/hero.png',
 
 configurations: [
    {
@@ -1091,7 +1125,8 @@ configurations: [
     'Plataforma de tijera móvil para trabajos en altura de 4 a 18 metros.',
   description:
     'Plataforma elevadora de tijera móvil con capacidad entre 300 y 1000 kg, adecuada para múltiples operadores y diferentes fuentes de energía.',
-  images: Array.from({ length: 3 }, (_, i) => `/products/ht-mp/${i + 1}.png`),
+ descB: '', 
+    images: Array.from({ length: 3 }, (_, i) => `/products/ht-mp/${i + 1}.png`),
   specs: [
     { label: 'Capacidad nominal', value: '300–1000 kg' },
     { label: 'Altura de plataforma', value: '4–18 m' },
@@ -1141,7 +1176,8 @@ configurations: [
     'Plataforma de tijera todo terreno para construcción y exteriores.',
   description:
     'Plataforma elevadora todo terreno con capacidad entre 230 y 450 kg, equipada con sistema de descenso de emergencia y protección impermeable.',
-  images: Array.from({ length: 2 }, (_, i) => `/products/ht-gtjz-tt/${i + 1}.png`),
+   descB: '', 
+    images: Array.from({ length: 2 }, (_, i) => `/products/ht-gtjz-tt/${i + 1}.png`),
   specs: [
     { label: 'Capacidad nominal', value: '230–450 kg' },
     { label: 'Altura de plataforma', value: '4.5–12 m' },
@@ -1188,8 +1224,9 @@ configurations: [
   shortDescription:
     'Plataforma de tijera compacta con sistema de extensión rápida.',
   description:
-    'Plataforma elevadora eléctrica con extensión accionada por pedal, ideal para proyectos interiores y mantenimiento industrial.',
-  images: Array.from({ length: 2 }, (_, i) => `/products/ht-gtjz-ruedas/${i + 1}.png`),
+    'Plataforma elevadora eléctrica con extensión accionada por pedal, ideal para proyectos interiores y mantenimiento industrial. ',
+  descB: '', 
+    images: Array.from({ length: 2 }, (_, i) => `/products/ht-gtjz-ruedas/${i + 1}.png`),
   specs: [
     { label: 'Capacidad nominal', value: '230–450 kg' },
     { label: 'Altura de plataforma', value: '6–12 m' },

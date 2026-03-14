@@ -5,11 +5,11 @@
   "items": [
     {
       "question": "¿Qué tipo de maquinaria ofrecen?",
-      "answer": "Ofrecemos maquinaria industrial y de construcción como montacargas, plataformas elevadoras, miniexcavadoras, cargadoras compactas y equipos especializados para distintas industrias."
+      "answer": "Ofrecemos equipos industriales como montacargas eléctricos, apiladores y plataformas elevadoras de tijera, diseñados para optimizar la manipulación y elevación de carga en distintos entornos industriales."
     },
     {
       "question": "¿Venden o también rentan equipos?",
-      "answer": "Principalmente nos enfocamos en la venta de maquinaria, sin embargo, podemos asesorarte sobre opciones según tus necesidades operativas y disponibilidad."
+      "answer": "Principalmente nos enfocamos en la venta de maquinaria. Nuestro equipo puede asesorarte para encontrar la mejor solución según tus necesidades operativas."
     },
     {
       "question": "¿Cómo puedo solicitar una cotización?",
@@ -17,11 +17,11 @@
     },
     {
       "question": "¿Ofrecen garantía en los equipos?",
-      "answer": "Sí. Todos nuestros equipos cuentan con garantía conforme a las especificaciones del fabricante y respaldo técnico especializado."
+      "answer": "Sí. Todos nuestros equipos cuentan con una garantía de 12 meses conforme a las especificaciones del fabricante y respaldo técnico especializado."
     },
     {
-      "question": "¿Realizan envíos a toda la República?",
-      "answer": "Sí, realizamos envíos a toda la República Mexicana. Los tiempos y costos de entrega dependen del tipo de equipo y la ubicación."
+      "question": "¿Realizan envíos internacionales?",
+      "answer": "Sí, realizamos envíos internacionales. Los tiempos y costos de entrega dependen del tipo de equipo y el país de destino."
     },
     {
       "question": "¿Cuentan con refacciones y servicio técnico?",

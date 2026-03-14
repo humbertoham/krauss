@@ -7,6 +7,7 @@ export type Product = {
   wheels: number
   shortDescription: string
   description: string
+  descB : string
   images: string[]
   specs: { label: string; value: string }[]
 

@@ -5,27 +5,27 @@
   "items": [
     {
       "question": "What type of machinery do you offer?",
-      "answer": "We offer industrial and construction machinery such as forklifts, scissor lifts, mini excavators, compact loaders, and specialized equipment for different industries."
+      "answer": "We offer industrial equipment such as electric forklifts, stackers, and scissor lift platforms designed to optimize material handling and lifting operations in various industrial environments."
     },
     {
       "question": "Do you sell or also rent equipment?",
-      "answer": "We primarily focus on the sale of machinery; however, we can advise you on options depending on your operational needs and availability."
+      "answer": "We mainly focus on selling machinery. Our team can advise you to find the best solution according to your operational needs."
     },
     {
-      "question": "How can I request a quote?",
-      "answer": "You can request a quote directly from our website in the contact section, or get in touch with our team by phone or email."
+      "question": "How can I request a quotation?",
+      "answer": "You can request a quotation directly from our website in the contact section, or get in touch with our team by phone or email."
     },
     {
       "question": "Do your machines come with a warranty?",
-      "answer": "Yes. All our equipment includes a warranty according to the manufacturer’s specifications and specialized technical support."
+      "answer": "Yes. All our equipment includes a 12-month warranty according to the manufacturer's specifications and specialized technical support."
     },
     {
-      "question": "Do you ship throughout the country?",
-      "answer": "Yes, we ship throughout Mexico. Delivery times and costs depend on the type of equipment and the destination."
+      "question": "Do you offer international shipping?",
+      "answer": "Yes, we offer international shipping. Delivery times and costs depend on the type of equipment and the destination country."
     },
     {
-      "question": "Do you offer spare parts and technical service?",
-      "answer": "We provide technical support and assistance for spare parts, maintenance, and operation of the equipment we distribute."
+      "question": "Do you provide spare parts and technical service?",
+      "answer": "We provide technical support and assistance for spare parts, maintenance, and operation of the equipment we supply."
     }
   ]
 }

@@ -123,12 +123,12 @@ export default function Footer() {
 
               <li className="flex items-center gap-2">
                 <FiMail className="text-[var(--km-red)]" />
-                ventas@kraussmachinery.com
+                 sales@kraussindustrial.com
               </li>
 
               <li className="flex items-center gap-2">
                 <FiMapPin className="text-[var(--km-red)]" />
-                {t('country')}
+                Houston, Texas USA | Reynosa, Tamps, Mexico
               </li>
 
             </ul>

@@ -115,6 +115,12 @@ export default function ProductPage({ params }: PageProps) {
                 {product.description}
               </p>
 
+              {product.descB && (
+  <p className="text-body ">
+    {product.descB}
+  </p>
+)}
+
               {/* SPECS */}
               <div className="mt-10 border-t border-black/10 pt-8">
 
@@ -170,6 +176,10 @@ export default function ProductPage({ params }: PageProps) {
         {/* COMPONENTS */}
         <ProductConfigurationShowcase product={product} />
 
+           {category.slug === 'montacargas-electrico' && (
+  <ImageCarousel />
+)}
+
         <ProductComparison
           category={category}
           currentProduct={product}
@@ -183,9 +193,7 @@ export default function ProductPage({ params }: PageProps) {
           productModel={product.model}
         />
         
-       {category.slug === 'carretilla-elevadora-electrica' && (
-  <ImageCarousel />
-)}
+    
         
         <RelatedProducts
           category={category}

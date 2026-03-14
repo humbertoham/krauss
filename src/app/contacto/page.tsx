@@ -152,12 +152,12 @@ export default function ContactPage() {
 
                 <li className="flex items-center gap-3">
                   <FiMail className="text-[var(--km-red)]" />
-                  ventas@kraussmachinery.com
+                   sales@kraussindustrial.com
                 </li>
 
                 <li className="flex items-center gap-3">
                   <FiMapPin className="text-[var(--km-red)]" />
-                  {t('info.country')}
+                  Houston, Texas USA | Reynosa, Tamps, Mexico
                 </li>
 
               </ul>
