@@ -51,7 +51,7 @@ export const metadata: Metadata = {
       'Especialistas en maquinaria industrial y de construcción. Equipos confiables, asesoría experta y cotización personalizada.',
     images: [
       {
-        url: '/card.png',
+        url: '/logo.png',
         width: 1200,
         height: 630,
         alt: 'Krauss Machinery – Maquinaria Industrial',
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     title: 'Krauss Machinery | Maquinaria Industrial',
     description:
       'Venta y asesoría en maquinaria industrial y de construcción.',
-    images: ['/card.png'],
+    images: ['/logo.png'],
   },
 
   robots: {
